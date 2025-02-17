@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammed Muminul Hoque - Extra Curriculum</title>
+  <meta name="description" content="Extra Curriculum Activities of Muhammed Muminul Hoque">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper clearfix">
+      <a class="site-title" href="index.html">Muhammed Muminul Hoque</a>
+      <nav>
+        <a href="index.html">About Me</a>
+        <a href="research.html">Research</a>
+        <a href="academics.html">Academics</a>
+        <a href="experience.html">Experience</a>
+        <a href="extra-curriculum.html">Extra Curriculum Activity</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="wrapper">
+    <h2>Achievements & Awards</h2>
+    <ul>
+      <li>Champion of Invisible CTF 2023</li>
+      <li>3rd Place at MEC CSE Carnival 2020 Programming Competition</li>
+      <li>Ranked in Top 6% in TryHackMe</li>
+    </ul>
+
+    <h2>Leadership & Activities</h2>
+    <ul>
+      <li>Member of Mec Computer Club (2020-2024)</li>
+      <li>Organizer of Cybersecurity Awareness Workshops</li>
+    </ul>
+
+    <h2>Standardized Tests</h2>
+    <p><strong>IELTS:</strong> Overall 6.5 (Listening 8.0)</p>
+  </main>
+  
+  <footer>
+    <div class="wrapper">
+      <p>© 2024 Muhammed Muminul Hoque | Designed for Scholarship Applications</p>
+    </div>
+  </footer>
+</body>
+</html>
