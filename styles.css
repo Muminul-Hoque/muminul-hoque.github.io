@@ -1,108 +1,80 @@
-/* styles.css */
-
 /* Shared Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #333;
   background: #fff;
   line-height: 1.6;
 }
-
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
 }
-
 header, footer {
   background: #fff;
   padding: 1rem 0;
   border-bottom: 1px solid #ccc;
 }
-
 footer {
   border-top: 1px solid #ccc;
   border-bottom: none;
   font-size: 14px;
   color: #555;
-  text-align: center;
 }
-
 .site-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #333;
   text-decoration: none;
   display: inline-block;
 }
-
 nav {
+  display: inline-block;
   float: right;
 }
-
 nav a {
   margin: 0 0.5rem;
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
-
 nav a:hover {
   text-decoration: underline;
 }
-
 main {
   margin-top: 2rem;
 }
-
 h2 {
   color: #333;
   margin-bottom: 1rem;
 }
-
 p {
   margin-bottom: 1rem;
   color: #555;
   font-size: 14px;
 }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Grid for About Section */
 .grid {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
-
 .col {
   flex: 1;
   padding: 1rem;
 }
-
 .profile-img {
   border-radius: 50%;
   width: 180px;
   height: 170px;
   margin-bottom: 1rem;
 }
-
 @media (max-width: 768px) {
   .grid {
     flex-direction: column;
-  }
-  nav {
-    float: none;
-    text-align: center;
-    margin-top: 1rem;
   }
 }
