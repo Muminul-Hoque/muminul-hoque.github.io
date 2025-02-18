@@ -23,7 +23,7 @@ header {
   border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Name left, nav right */
 }
 
 footer {
@@ -39,17 +39,19 @@ footer {
   font-weight: bold;
   display: inline-block;
   text-align: left;
+  margin-left: 1rem; /* Optional spacing */
 }
 
 nav {
-  margin-left: auto; /* Push navigation to the right */
+  display: flex; /* Ensures links stay in one row */
+  gap: 1rem; /* Adds spacing between links */
+  margin-left: auto; /* Pushes nav to the right */
 }
-
 nav a {
-  margin: 0 0.5rem;
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  padding: 0.5rem;
 }
 nav a:hover {
   text-decoration: underline;
