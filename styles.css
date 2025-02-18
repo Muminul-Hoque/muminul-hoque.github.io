@@ -206,4 +206,21 @@ main {
     width: 180px; /* Reduce image size for mobile */
   }
 }
+/* 🔹 Download CV Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
 
