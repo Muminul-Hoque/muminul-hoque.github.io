@@ -5,35 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Muhammed Muminul Hoque - Extra Curriculum</title>
   <meta name="description" content="Extra Curriculum Activities of Muhammed Muminul Hoque">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Styling for sections with images */
-    .section-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-
-    .certificate-img {
-      width: 150px;  /* Adjust size as needed */
-      height: auto;
-      border-radius: 10px;
-      transition: transform 2s ease-in-out, opacity 2s;
-      opacity: 0;  /* Initially hidden for animation */
-    }
-
-    /* Slow-motion animation */
-    .certificate-img.show {
-      transform: translateX(0);
-      opacity: 1;
-    }
-
-    h2 {
-      flex: 1;
-      margin-right: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">  <!-- Linked external CSS -->
 </head>
 <body>
   <header>
@@ -53,10 +25,11 @@
     <!-- Achievements & Awards -->
     <div class="section-container">
       <h2>Achievements & Awards</h2>
-      <img src="assets/Invisible_CTF_Contest.jpeg" alt="Invisible CTF Contest" class="certificate-img">
-      <img src="assets/Introduction_to_Cyber_Security_Learning_Path(Certificate).png" alt="TryHackMe" class="certificate-img">
-      <img src="assets/Pre_Security_Learning_Path(Certificate).png" alt="TryHackMe" class="certificate-img">
-
+      <div class="certificates">
+        <img src="assets/Invisible_CTF_Contest.jpeg" alt="Invisible CTF Contest" class="certificate-img">
+        <img src="assets/Introduction_to_Cyber_Security_Learning_Path(Certificate).png" alt="TryHackMe" class="certificate-img">
+        <img src="assets/Pre_Security_Learning_Path(Certificate).png" alt="TryHackMe" class="certificate-img">
+      </div>
     </div>
     <ul>
       <li>Champion of Invisible CTF 2023</li>
@@ -67,7 +40,7 @@
     <!-- Training & Certifications -->
     <div class="section-container">
       <h2>Training & Certifications</h2>
-      <img src="images/certifications.jpg" alt="Training Certificate" class="certificate-img">
+      <img src="assets/certifications.jpg" alt="Training Certificate" class="certificate-img">
     </div>
     <p><strong>Cyber Security For Professionals</strong> - Byte Capsule (Feb-Aug 2023)</p>
     <ul>
@@ -78,7 +51,7 @@
     <!-- Leadership & Activities -->
     <div class="section-container">
       <h2>Leadership & Activities</h2>
-      <img src="images/leadership.jpg" alt="Leadership Certificate" class="certificate-img">
+      <img src="assets/leadership.jpg" alt="Leadership Certificate" class="certificate-img">
     </div>
     <ul>
       <li>Member of Mec Computer Club (2020-2024)</li>
@@ -88,7 +61,7 @@
     <!-- Standardized Tests -->
     <div class="section-container">
       <h2>Standardized Tests</h2>
-      <img src="images/ielts.jpg" alt="IELTS Certificate" class="certificate-img">
+      <img src="assets/ielts.jpg" alt="IELTS Certificate" class="certificate-img">
     </div>
     <p><strong>IELTS:</strong> Overall 6.5 (Listening 8.0)</p>
 
@@ -100,16 +73,6 @@
     </div>
   </footer>
 
-  <!-- JavaScript for animation -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const images = document.querySelectorAll(".certificate-img");
-
-      setTimeout(() => {
-        images.forEach(img => img.classList.add("show"));
-      }, 500);  // Delay for smooth animation
-    });
-  </script>
-
+  <script src="js/script.js"></script>  <!-- Linked external JavaScript -->
 </body>
 </html>
