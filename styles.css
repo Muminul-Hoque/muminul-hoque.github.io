@@ -80,13 +80,6 @@ ul li img {
   margin-top: 10px;
 }
 
-/* Section Styling */
-.section-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
 
 /* Certificate Images */
 .certificates {
