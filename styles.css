@@ -299,8 +299,8 @@ ul {
 }
 
 .education-img, .project-img {
-  width: auto;
-  height: 30%;
+  width: 20%;
+  height: auto;
   border-radius: 8px;
   margin-top: 10px;
 }
