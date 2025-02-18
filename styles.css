@@ -55,7 +55,7 @@ main {
   margin-top: 2rem;
 }
 
-/* Section Container for each certificate/achievement item */
+/* Section Container for each item */
 .section-item {
   display: flex;
   align-items: center;
@@ -87,6 +87,7 @@ main {
 .image-content {
   flex: 0 0 300px;
   margin-left: 2rem;
+  max-width: 300px;
 }
 .image-content img {
   width: 100%;
