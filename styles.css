@@ -98,40 +98,40 @@ ul li img {
   margin-top: 10px;
 }
 
-/* 🔹 Certificate Images */
-.certificates {
+/* 🔹 Achievements Section */
+.achievements {
   display: flex;
+  justify-content: center; /* Centers the images */
+  gap: 20px; /* Adds space between images */
   flex-wrap: wrap; /* Ensures responsiveness */
-  gap: 10px;
-  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-.certificate-img {
-  width: 250px;  /* Adjust size */
-  height: auto;
-  border-radius: 10px;
-  transition: transform 2s ease-in-out, opacity 2s;
-  opacity: 0;  /* Initially hidden for animation */
+.achievement-img {
+  width: 30%; /* Each image takes 30% of the page width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Smooth corners */
+  transition: transform 0.5s ease-in-out, opacity 1s;
+  opacity: 0; /* Initially hidden for animation */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
-/* 🔹 Slow-motion Animation */
-.certificate-img.show {
+/* Slow-motion animation */
+.achievement-img.show {
   transform: translateY(0);
   opacity: 1;
 }
 
-/* 🔹 Responsive Design */
+/* 🔹 Responsive Fixes */
 @media (max-width: 768px) {
-  .grid {
-    flex-direction: column;
+  .achievements {
+    flex-direction: column; /* Stack images on small screens */
+    align-items: center;
   }
 
-  nav {
-    display: block;
-    text-align: center;
-  }
-
-  .certificates {
-    justify-content: center;
+  .achievement-img {
+    width: 80%; /* Larger images for mobile */
   }
 }
+
+
