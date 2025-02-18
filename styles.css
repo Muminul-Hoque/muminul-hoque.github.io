@@ -19,11 +19,13 @@ body {
 /* Header & Footer */
 header {
   background: #fff;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
   padding: 1rem 0;
-
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 footer {
   border-top: 1px solid #ccc;
   border-bottom: none;
@@ -34,15 +36,15 @@ footer {
   font-size: 1.5rem;
   color: #333;
   text-decoration: none;
-  display: inline-block; /* Allows it to stay inline */
-  text-align: left; /* Aligns it to the left */
-  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
 }
 
 nav {
-  text-align: center;
-  margin-bottom: 1rem;
+  margin-left: auto; /* Push navigation to the right */
 }
+
 nav a {
   margin: 0 0.5rem;
   text-decoration: none;
