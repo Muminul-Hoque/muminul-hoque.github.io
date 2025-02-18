@@ -107,7 +107,7 @@ ul li img {
 }
 
 .certificate-img {
-  width: 120px;  /* Adjust size */
+  width: 250px;  /* Adjust size */
   height: auto;
   border-radius: 10px;
   transition: transform 2s ease-in-out, opacity 2s;
