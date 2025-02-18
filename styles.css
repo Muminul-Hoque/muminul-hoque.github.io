@@ -80,6 +80,34 @@ ul li img {
   margin-top: 10px;
 }
 
+/* Section Styling */
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Certificate Images */
+.certificates {
+  display: flex;
+  gap: 10px;
+}
+
+.certificate-img {
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 2s ease-in-out, opacity 2s;
+  opacity: 0;  /* Initially hidden for animation */
+}
+
+/* Slow-motion animation */
+.certificate-img.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 
 @media (max-width: 768px) {
   .grid {
