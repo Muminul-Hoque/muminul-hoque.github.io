@@ -1,3 +1,4 @@
+
 /* Shared Styles */
 * {
   box-sizing: border-box;
@@ -154,4 +155,21 @@ main {
 .about-section .about-info {
   flex: 1;
   text-align: left;
+}
+/* 🔹 Responsive Header (Fix for Name & Nav) */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem; /* Reduces space between links */
+    margin-top: 10px; /* Adds some space */
+  }
+
+  .site-title {
+    text-align: center; /* Centers name on smaller screens */
+  }
 }
