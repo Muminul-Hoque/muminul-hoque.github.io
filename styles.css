@@ -19,11 +19,11 @@ body {
 /* Header & Footer */
 header {
   background: #fff;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Name left, nav right */
+  justify-content: space-between; /* Name on left, nav on right */
 }
 
 footer {
@@ -38,15 +38,17 @@ footer {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  text-align: left;
-  margin-left: 1rem; /* Optional spacing */
+  margin-left: 1rem; /* Adjust spacing */
 }
 
+/* 🔹 Navigation */
 nav {
-  display: flex; /* Ensures links stay in one row */
-  gap: 1rem; /* Adds spacing between links */
-  margin-left: auto; /* Pushes nav to the right */
+  display: flex; /* Keep links in one row */
+  gap: 1rem; /* Space between links */
+  margin-left: auto; /* Push navigation to right */
 }
+
+/* 🔹 Navigation Links */
 nav a {
   text-decoration: none;
   color: #333;
@@ -56,7 +58,6 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-
 /* Main Content */
 main {
   margin-top: 2rem;
