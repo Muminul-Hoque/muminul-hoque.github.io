@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Animate the certificate image
-  const certificateImg = document.querySelector('.certificate-img');
-  if (certificateImg) {
+  // Animate certificate images
+  const certificateImgs = document.querySelectorAll('.certificate-img');
+  certificateImgs.forEach((img) => {
     setTimeout(() => {
-      certificateImg.classList.add('show');
+      img.classList.add('show');
     }, 500);
-  }
+  });
   
-  // Animate all achievement images
+  // Animate achievement images
   const achievementImgs = document.querySelectorAll('.achievement-img');
-  achievementImgs.forEach(img => {
+  achievementImgs.forEach((img) => {
     setTimeout(() => {
       img.classList.add('show');
     }, 500);
