@@ -3,5 +3,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
   setTimeout(() => {
     images.forEach(img => img.classList.add("show"));
-  }, 500);  // Adjust the delay as needed
+  }, 500);  // Adjust delay as needed
 });
