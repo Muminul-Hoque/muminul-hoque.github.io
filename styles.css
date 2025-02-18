@@ -224,43 +224,46 @@ main {
   background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Research Section: Flex for Image & Text Alignment */
+/* Research Section Layout */
 .research-container {
   display: flex;
-  align-items: center; /* Aligns image and text vertically */
-  justify-content: space-between; /* Keeps them spaced out */
-  margin-top: 1.5rem; /* Adds space above the container */
-  gap: 2rem; /* Adds space between text and image */
+  align-items: center; /* Centers the items vertically */
+  justify-content: space-between; /* Space out text and image */
+  gap: 2rem; /* Adds gap between text and image */
+  margin-top: 2rem; /* Adds space above */
 }
 
+/* Text Section */
 .research-text {
-  flex: 1; /* Allows the text section to take the remaining space */
-  text-align: left; /* Ensures text alignment */
+  flex: 1; /* Ensures text takes the remaining space */
+  text-align: left;
+}
+
+/* Image Section */
+.research-image {
+  flex: 0 0 45%; /* Ensure the image takes up about 45% of the width */
 }
 
 .research-img {
-  max-width: 450px; /* Limit the image size */
-  width: 100%;
-  height: auto;
-  border-radius: 10px; /* Adds rounded corners to the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the image */
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0; /* Initially hides the image for animation */
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
 }
 
-.research-img.show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-/* Responsive Design */
+/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
   .research-container {
-    flex-direction: column; /* Stacks text and image vertically */
-    text-align: center; /* Centers the text */
+    flex-direction: column; /* Stack text and image on smaller screens */
+    text-align: center; /* Center the text */
+  }
+
+  .research-image {
+    flex: 0 0 auto; /* Ensure the image stays responsive */
+    margin-top: 1rem; /* Adds space between text and image on small screens */
   }
 
   .research-img {
-    max-width: 100%; /* Makes sure the image is responsive on small screens */
+    max-width: 100%; /* Ensure the image is responsive */
   }
 }
