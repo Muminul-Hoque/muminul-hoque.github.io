@@ -267,3 +267,7 @@ main {
     max-width: 100%; /* Ensure the image is responsive */
   }
 }
+p {
+  text-align: justify;
+  line-height: 1.6; /* Adjust line spacing */
+}
