@@ -55,12 +55,11 @@ main {
   margin-top: 2rem;
 }
 .profile-img {
-  width: 100%;  /* Responsive */
-  max-width: 450px;  /* Limits max size */
-  height: auto;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+  width: 450px; /* Adjust as needed */
+  height: 450px; /* Makes it a square */
+  object-fit: cover; /* Ensures it covers the box without distortion */
+  border-radius: 0; /* Ensures no rounded corners */
+
 }
 
 /* Section Container for each item */
