@@ -74,6 +74,12 @@ p {
   border-radius: 0; /* Ensures no rounded corners */
 
 }
+ul li img {
+  display: block;
+  max-width: 150px;
+  margin-top: 10px;
+}
+
 
 @media (max-width: 768px) {
   .grid {
