@@ -59,7 +59,6 @@ main {
   height: 450px; /* Makes it a square */
   object-fit: cover; /* Ensures it covers the box without distortion */
   border-radius: 0; /* Ensures no rounded corners */
-
 }
 
 /* Section Container for each item */
@@ -125,4 +124,26 @@ main {
     margin-left: 0;
     margin-top: 1rem;
   }
+}
+
+/* -----------------------------------------------------------------
+   About Page Specific Layout (Does not affect Extra Curriculum)
+   ----------------------------------------------------------------- */
+/* Use this block on your About page only by wrapping the content
+   in a container with the class .about-section */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Prevent wrapping so the image stays on the left */
+  flex-wrap: nowrap;
+}
+.about-section .profile-img {
+  /* Ensure the profile image retains its size and stays left */
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+.about-section .about-info {
+  flex: 1;
+  text-align: left;
 }
