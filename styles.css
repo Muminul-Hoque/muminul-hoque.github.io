@@ -98,40 +98,63 @@ ul li img {
   margin-top: 10px;
 }
 
-/* 🔹 Achievements Section */
-.achievements {
-  display: flex;
-  justify-content: center; /* Centers the images */
-  gap: 20px; /* Adds space between images */
-  flex-wrap: wrap; /* Ensures responsiveness */
+/* Certificates Section Styling */
+.certificates-section {
+  background: #f9f9f9;           /* Light background to set the section apart */
+  padding: 3rem 0;
+}
+
+.certificates-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.certificates-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.certificates-section p {
+  font-size: 1rem;
   margin-bottom: 2rem;
+  color: #666;
 }
 
-.achievement-img {
-  width: 30%; /* Each image takes 30% of the page width */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 10px; /* Smooth corners */
-  transition: transform 0.5s ease-in-out, opacity 1s;
-  opacity: 0; /* Initially hidden for animation */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+/* Responsive Grid for Certificates */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  align-items: center;
 }
 
-/* Slow-motion animation */
-.achievement-img.show {
+/* Certificate Item */
+.certificate-item {
+  overflow: hidden;
+}
+
+/* Certificate Images */
+.certificate-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0; /* Start hidden for animation */
+}
+
+/* Animation for Certificate Images */
+.certificate-img.show {
   transform: translateY(0);
   opacity: 1;
 }
 
-/* 🔹 Responsive Fixes */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .achievements {
-    flex-direction: column; /* Stack images on small screens */
-    align-items: center;
-  }
-
-  .achievement-img {
-    width: 80%; /* Larger images for mobile */
+  .certificates-grid {
+    grid-template-columns: 1fr;
   }
 }
-
-
