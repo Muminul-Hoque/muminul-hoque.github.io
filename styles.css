@@ -54,6 +54,13 @@ nav a:hover {
 main {
   margin-top: 2rem;
 }
+.profile-img {
+  display: block;
+  max-width: 200px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes it circular */
+  margin: 20px auto; /* Centers the image */
+  border: 3px solid #333; /* Adds a border */
+}
 
 /* Section Container for each item */
 .section-item {
