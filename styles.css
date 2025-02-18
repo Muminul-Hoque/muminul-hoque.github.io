@@ -33,9 +33,11 @@ footer {
   font-size: 1.5rem;
   color: #333;
   text-decoration: none;
-  display: block;
+  display: inline-block; /* Allows it to stay inline */
+  text-align: left; /* Aligns it to the left */
   margin-bottom: 0.5rem;
 }
+
 nav {
   text-align: center;
   margin-bottom: 1rem;
