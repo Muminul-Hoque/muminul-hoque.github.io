@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,34 @@
   <title>Muhammed Muminul Hoque - Extra Curriculum</title>
   <meta name="description" content="Extra Curriculum Activities of Muhammed Muminul Hoque">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Styling for sections with images */
+    .section-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .certificate-img {
+      width: 150px;  /* Adjust size as needed */
+      height: auto;
+      border-radius: 10px;
+      transition: transform 2s ease-in-out, opacity 2s;
+      opacity: 0;  /* Initially hidden for animation */
+    }
+
+    /* Slow-motion animation */
+    .certificate-img.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    h2 {
+      flex: 1;
+      margin-right: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,34 +49,64 @@
   </header>
   
   <main class="wrapper">
-    <h2>Achievements & Awards</h2>
+    
+    <!-- Achievements & Awards -->
+    <div class="section-container">
+      <h2>Achievements & Awards</h2>
+      
+    </div>
     <ul>
-      <li>Champion of Invisible CTF 2023</li>
+      <li><img src="images/achievements.jpg" alt="Achievements Certificate" class="certificate-img">Champion of Invisible CTF 2023</img></li>
       <li>3rd Place at MEC CSE Carnival 2020 Programming Competition</li>
       <li>Ranked in Top 6% in TryHackMe</li>
     </ul>
 
-  <h2>Training & Certifications</h2>
+    <!-- Training & Certifications -->
+    <div class="section-container">
+      <h2>Training & Certifications</h2>
+      <img src="images/certifications.jpg" alt="Training Certificate" class="certificate-img">
+    </div>
     <p><strong>Cyber Security For Professionals</strong> - Byte Capsule (Feb-Aug 2023)</p>
     <ul>
       <li>Batch Topper in 6-month intensive program</li>
       <li>Covered threat analysis, cryptography, and ethical hacking</li>
     </ul>
 
-    <h2>Leadership & Activities</h2>
+    <!-- Leadership & Activities -->
+    <div class="section-container">
+      <h2>Leadership & Activities</h2>
+      <img src="images/leadership.jpg" alt="Leadership Certificate" class="certificate-img">
+    </div>
     <ul>
       <li>Member of Mec Computer Club (2020-2024)</li>
       <li>Organizer of Cybersecurity Awareness Workshops</li>
     </ul>
 
-    <h2>Standardized Tests</h2>
+    <!-- Standardized Tests -->
+    <div class="section-container">
+      <h2>Standardized Tests</h2>
+      <img src="images/ielts.jpg" alt="IELTS Certificate" class="certificate-img">
+    </div>
     <p><strong>IELTS:</strong> Overall 6.5 (Listening 8.0)</p>
+
   </main>
   
   <footer>
     <div class="wrapper">
-      <p>© 2024 Muhammed Muminul Hoque </p>
+      <p>© 2024 Muhammed Muminul Hoque</p>
     </div>
   </footer>
+
+  <!-- JavaScript for animation -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll(".certificate-img");
+
+      setTimeout(() => {
+        images.forEach(img => img.classList.add("show"));
+      }, 500);  // Delay for smooth animation
+    });
+  </script>
+
 </body>
 </html>
