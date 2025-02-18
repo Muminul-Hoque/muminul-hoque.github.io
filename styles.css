@@ -173,3 +173,37 @@ main {
     text-align: center; /* Centers name on smaller screens */
   }
 }
+/* 🔹 About Me Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* 🔹 Profile Image */
+.profile-img {
+  width: 250px; /* Adjust size */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* 🔹 About Me Text */
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* 🔹 Responsive: Stack Image & Text on Small Screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack image on top */
+    text-align: center; /* Center text */
+  }
+
+  .profile-img {
+    width: 180px; /* Reduce image size for mobile */
+  }
+}
+
