@@ -69,7 +69,7 @@ p {
 }
 .profile-img {
   width: 400px; /* Adjust as needed */
-  height: 500px; /* Makes it a square */
+  height: 400px; /* Makes it a square */
   object-fit: cover; /* Ensures it covers the box without distortion */
   border-radius: 0; /* Ensures no rounded corners */
   border: 0px solid #000; /* Optional: Adds a border */
