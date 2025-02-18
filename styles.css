@@ -68,11 +68,11 @@ p {
   padding: 1rem;
 }
 .profile-img {
-  width: 400px; /* Adjust as needed */
-  height: 400px; /* Makes it a square */
+  width: 500px; /* Adjust as needed */
+  height: 500px; /* Makes it a square */
   object-fit: cover; /* Ensures it covers the box without distortion */
   border-radius: 0; /* Ensures no rounded corners */
-  border: 0px solid #000; /* Optional: Adds a border */
+
 }
 
 @media (max-width: 768px) {
