@@ -84,12 +84,15 @@ main {
 }
 
 /* Image Content (Right Side) */
-.image-content {
+/* Only applies to images within .certificate-section and .achievements-list */
+.certificate-section .image-content,
+.achievements-list .image-content {
   flex: 0 0 300px;
   margin-left: 2rem;
   max-width: 300px;
 }
-.image-content img {
+.certificate-section .image-content img,
+.achievements-list .image-content img {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -97,7 +100,8 @@ main {
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0; /* Start hidden for animation */
 }
-.image-content img.show {
+.certificate-section .image-content img.show,
+.achievements-list .image-content img.show {
   transform: translateY(0);
   opacity: 1;
 }
@@ -108,7 +112,8 @@ main {
     flex-direction: column;
     text-align: center;
   }
-  .image-content {
+  .certificate-section .image-content,
+  .achievements-list .image-content {
     flex: 0 0 auto;
     margin-left: 0;
     margin-top: 1rem;
