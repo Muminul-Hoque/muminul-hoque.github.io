@@ -224,7 +224,7 @@ main {
   background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* 🔹 Research Section: Flex for Image & Text Alignment */
+/* Research Section: Flex for Image & Text Alignment */
 .research-container {
   display: flex;
   align-items: center; /* Centers the items vertically */
@@ -252,7 +252,7 @@ main {
   opacity: 1;
 }
 
-/* 🔹 Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
   .research-container {
     flex-direction: column; /* Stacks text and image vertically on small screens */
@@ -263,4 +263,3 @@ main {
     max-width: 100%; /* Makes sure the image is responsive on small screens */
   }
 }
- 
