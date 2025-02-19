@@ -195,7 +195,11 @@ main {
   width: 100%;
   border-radius: 10px;
 }
-
+/* (Optional) Adjust the download button spacing if needed */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .about-container {
@@ -211,11 +215,7 @@ main {
   }
 }
 
-/* (Optional) Adjust the download button spacing if needed */
-.download-btn {
-  display: inline-block;
-  margin-top: 1rem;
-}
+
 
 /* Research Section Layout */
 .research-container {
@@ -413,6 +413,49 @@ ul {
     margin-bottom: 1.5rem;
   }
 }
+/* Technical Skills & Research Interests Section */
+.skills-research-section {
+  margin-top: 2rem;
+}
+
+.skills-research-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.skills-research-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.skills-research-container .left-column-skills,
+.skills-research-container .right-column-skills {
+  flex: 1;
+}
+
+.skills-research-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.skills-research-container p,
+.skills-research-container ul {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-research-container {
+    flex-direction: column;
+  }
+}
+
 
 
 
