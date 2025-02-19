@@ -317,3 +317,68 @@ ul {
   margin: 20px 0;
   border-radius: 8px;
 }
+/* Certifications & Online Courses Section */
+.certifications-section {
+  margin-top: 2rem;
+}
+
+.certifications-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.certification-item .text-content {
+  flex: 1;
+  text-align: left;
+}
+
+.certification-item .text-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.certification-item .text-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.certification-item .image-content {
+  flex: 0 0 300px;
+  margin-left: 2rem;
+  max-width: 300px;
+}
+
+.certification-item .image-content img.certification-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .certification-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .certification-item .image-content {
+    margin-left: 0;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+}
+
