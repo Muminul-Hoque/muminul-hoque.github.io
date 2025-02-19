@@ -147,7 +147,7 @@ main {
   /* Prevent wrapping so the image stays on the left */
   flex-wrap: nowrap;
 }
-.about-section .profile-img {
+.about-section {
   /* Ensure the profile image retains its size and stays left */
   flex: 0 0 auto;
   margin-right: 20px;
