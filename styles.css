@@ -374,5 +374,50 @@ ul {
     max-width: 100%;
   }
 }
+/* About Container Layout */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-container .left-column {
+  /* Reserve enough space for your image at its original size */
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.about-container .right-column {
+  flex: 1;
+}
+
+/* Preserve previous profile image size */
+.about-container .left-column .profile-img {
+  width: 250px; /* This is your previous size; adjust if needed */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container .left-column,
+  .about-container .right-column {
+    width: 100%;
+  }
+  .about-container .left-column {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* (Optional) Adjust the download button spacing if needed */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
 
 
