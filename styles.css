@@ -474,5 +474,9 @@ ul {
   transform: scale(1.05);
 }
 
-
+.highlight {
+  font-weight: bold; /* Makes the text bold */
+  color: #2a7f62; /* A professional green color */
+  text-decoration: underline; /* Underlines the text */
+}
 
