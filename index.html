@@ -22,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'G-Y8003Y5P14');
 </script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
 </head>
@@ -117,69 +117,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
      <script src="script.js"></script>
-  <script>
-  // Ensure EmailJS is loaded before initializing
- function sendEmail(visitorId) {
-    if (typeof emailjs === "undefined") {
-        console.error("❌ EmailJS not loaded. Cannot send email.");
-        return;
-    }
-
-    var params = {
-        to_email: "muminul950@gmail.com",  // Your email
-        message: "A visitor with ID " + visitorId + " just visited your portfolio."
-    };
-
-    emailjs.send("service_d0c3u1s", "template_xxxxxx", params)  // Use correct Service & Template ID
-        .then(function(response) {
-            console.log('✅ Email sent successfully:', response);
-        }, function(error) {
-            console.error('❌ Error sending email:', error);
-        });
-}
-
-// Run function when URL has ?id=
+ <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const visitorId = urlParams.get('id');
+  // Check if EmailJS is loaded and then initialize it
+  if (typeof emailjs === "undefined") {
+      console.error("❌ EmailJS is not loaded. Check your script URL.");
+      return;
+  }
+  emailjs.init("7B41n6u7zbXKI-ld9"); // Replace with your actual EmailJS Public Key
 
-    if (visitorId) {
-        sendEmail(visitorId);
-    }
-});
-
-</script>
-
-   <script type="text/javascript">
-  // Initialize EmailJS
-emailjs.init("7B41n6u7zbXKI-ld9");  // Replace with your actual Public Key
-
-  // Function to send email when the page loads
+  // Define the sendEmail function
   function sendEmail(visitorId) {
     var params = {
-      to_email: "muminul950@gmail.com", // Replace with your email
+      to_email: "muminul950@gmail.com",  // Replace with your email
       subject: "Visitor ID Notification",
       message: "A visitor with ID " + visitorId + " just visited your portfolio."
     };
 
-    // Send email
-    emailjs.send("service_d0c3u1s", "template_f9eecgi", params)
+    emailjs.send("service_d0c3u1s", "template_f9eecgi", params) // Replace with your actual Service & Template IDs
       .then(function(response) {
-            console.log('✅ Email sent successfully:', response);
-        }, function(error) {
-            console.error('❌ Error sending email:', error);
-        });
-}
+          console.log('✅ Email sent successfully:', response);
+      }, function(error) {
+          console.error('❌ Error sending email:', error);
+      });
+  }
 
-  // Capture `id` parameter from URL
-  window.onload = function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const visitorId = urlParams.get('id');  // Get value of ?id=
-
-    if (visitorId) {
-      sendEmail(visitorId);  // Send email if `id` exists
-    }
-  };
+  // Get the "id" parameter from the URL and send an email if it exists
+  const urlParams = new URLSearchParams(window.location.search);
+  const visitorId = urlParams.get('id');
+  if (visitorId) {
+    sendEmail(visitorId);
+  }
+});
 </script>
 
 </body>
