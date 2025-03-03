@@ -22,7 +22,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'G-Y8003Y5P14');
 </script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+
 
 </head>
 <body>
@@ -118,7 +119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <script src="script.js"></script>
    <script type="text/javascript">
   // Initialize EmailJS
-  emailjs.init("7B41n6u7zbXKI-ld9"); // Replace with your user ID from EmailJS dashboard
+emailjs.init("7B41n6u7zbXKI-ld9");  // Replace with your actual Public Key
 
   // Function to send email when the page loads
   function sendEmail(visitorId) {
@@ -131,11 +132,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     // Send email
     emailjs.send("service_d0c3u1s", "template_f9eecgi", params)
       .then(function(response) {
-        console.log('Email sent successfully:', response);
-      }, function(error) {
-        console.log('Error sending email:', error);
-      });
-  }
+            console.log('✅ Email sent successfully:', response);
+        }, function(error) {
+            console.error('❌ Error sending email:', error);
+        });
+}
 
   // Capture `id` parameter from URL
   window.onload = function() {
