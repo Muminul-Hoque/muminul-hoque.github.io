@@ -116,6 +116,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
      <script src="script.js"></script>
-   
+   <script type="text/javascript">
+  // Initialize EmailJS
+  emailjs.init("7B41n6u7zbXKI-ld9"); // Replace with your user ID from EmailJS dashboard
+
+  // Function to send email when the page loads
+  function sendEmail(visitorId) {
+    var params = {
+      to_email: "muminul950@gmail.com", // Replace with your email
+      subject: "Visitor ID Notification",
+      message: "A visitor with ID " + visitorId + " just visited your portfolio."
+    };
+
+    // Send email
+    emailjs.send("service_d0c3u1s", "template_f9eecgi", params)
+      .then(function(response) {
+        console.log('Email sent successfully:', response);
+      }, function(error) {
+        console.log('Error sending email:', error);
+      });
+  }
+
+  // Capture `id` parameter from URL
+  window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const visitorId = urlParams.get('id');  // Get value of ?id=
+
+    if (visitorId) {
+      sendEmail(visitorId);  // Send email if `id` exists
+    }
+  };
+</script>
+
 </body>
 </html>
