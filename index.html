@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8003Y5P14"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -117,6 +117,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
      <script src="script.js"></script>
+  <script>
+  // Ensure EmailJS is loaded before initializing
+ function sendEmail(visitorId) {
+    if (typeof emailjs === "undefined") {
+        console.error("❌ EmailJS not loaded. Cannot send email.");
+        return;
+    }
+
+    var params = {
+        to_email: "muminul950@gmail.com",  // Your email
+        message: "A visitor with ID " + visitorId + " just visited your portfolio."
+    };
+
+    emailjs.send("service_d0c3u1s", "template_xxxxxx", params)  // Use correct Service & Template ID
+        .then(function(response) {
+            console.log('✅ Email sent successfully:', response);
+        }, function(error) {
+            console.error('❌ Error sending email:', error);
+        });
+}
+
+// Run function when URL has ?id=
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const visitorId = urlParams.get('id');
+
+    if (visitorId) {
+        sendEmail(visitorId);
+    }
+});
+
+</script>
+
    <script type="text/javascript">
   // Initialize EmailJS
 emailjs.init("7B41n6u7zbXKI-ld9");  // Replace with your actual Public Key
