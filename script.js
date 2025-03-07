@@ -1,49 +1,53 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Animate certificate images
   const certificateImgs = document.querySelectorAll('.certificate-img');
-  certificateImgs.forEach((img) => {
+  certificateImgs.forEach((img, index) => {
+    // Optionally stagger animation by index
     setTimeout(() => {
       img.classList.add('show');
-    }, 500);
+    }, 500 + index * 100);
   });
   
   // Animate achievement images
   const achievementImgs = document.querySelectorAll('.achievement-img');
-  achievementImgs.forEach((img) => {
+  achievementImgs.forEach((img, index) => {
     setTimeout(() => {
       img.classList.add('show');
-    }, 500);
+    }, 500 + index * 100);
   });
-});
- 
-document.addEventListener("DOMContentLoaded", function() {
-  // Check if EmailJS is loaded and then initialize it
+
+  // Ensure EmailJS is loaded
   if (typeof emailjs === "undefined") {
       console.error("❌ EmailJS is not loaded. Check your script URL.");
       return;
   }
+  
+  // Initialize EmailJS with your Public Key
   emailjs.init("7B41n6u7zbXKI-ld9"); // Replace with your actual EmailJS Public Key
 
   // Define the sendEmail function
   function sendEmail(visitorId) {
-    var params = {
+    const params = {
       to_email: "muminul950@gmail.com",  // Replace with your email
       subject: "Visitor ID Notification",
       message: "A visitor with ID " + visitorId + " just visited your portfolio."
     };
 
-    emailjs.send("service_d0c3u1s", "template_f9eecgi", params) // Replace with your actual Service & Template IDs
+    emailjs.send("service_d0c3u1s", "template_f9eecgi", params) // Replace with your Service & Template IDs
       .then(function(response) {
           console.log('✅ Email sent successfully:', response);
-      }, function(error) {
+      })
+      .catch(function(error) {
           console.error('❌ Error sending email:', error);
       });
   }
 
-  // Get the "id" parameter from the URL and send an email if it exists
+  // Check URL for "id" parameter and trigger email if found
   const urlParams = new URLSearchParams(window.location.search);
   const visitorId = urlParams.get('id');
   if (visitorId) {
     sendEmail(visitorId);
+  } else {
+    console.log("No visitor ID found in the URL.");
   }
 });
