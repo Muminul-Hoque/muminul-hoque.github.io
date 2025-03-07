@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Ensure EmailJS is loaded
   if (typeof emailjs === "undefined") {
-      console.error("❌ EmailJS is not loaded. Check your script URL.");
+      console.error("not loaded ");
       return;
   }
   
@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     emailjs.send("service_d0c3u1s", "template_f9eecgi", params) // Replace with your Service & Template IDs
       .then(function(response) {
-          console.log('✅ Email sent successfully:', response);
+          console.log('Ok', response);
       })
       .catch(function(error) {
-          console.error('❌ Error sending email:', error);
+          console.error('Error', error);
       });
   }
 
