@@ -48,6 +48,8 @@ if (typeof emailjs === "undefined") {
             .then(response => response.json())
             .then(data => {
                 console.log("Visitor Location:", data);
+
+                // Send email for all visitors, including Bangladesh
                 sendEmail({
                     city: data.city,
                     region: data.region,
