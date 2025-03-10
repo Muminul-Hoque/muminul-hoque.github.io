@@ -42,23 +42,21 @@ document.addEventListener("DOMContentLoaded", function() {
               });
       }
 
-      // Function to get visitor's location
-      function trackVisitorLocation() {
-          fetch("https://ipapi.co/json/")  // Geolocation API
-              .then(response => response.json())
-              .then(data => {
-                  console.log("Visitor Location:", data);
+    function trackVisitorLocation() {
+    fetch("https://ipinfo.io/json?token=2215e8e7158689")  // Replace YOUR_TOKEN with a free API key
+        .then(response => response.json())
+        .then(data => {
+            console.log("Visitor Location:", data);
 
-                  // Send email for all visitors, including Bangladesh
-                  sendEmail({
-                      city: data.city,
-                      region: data.region,
-                      country: data.country_name,
-                      ip: data.ip
-                  });
-              })
-              .catch(error => console.error("Geolocation API error:", error));
-      }
+            sendEmail({
+                city: data.city,
+                region: data.region,
+                country: data.country,
+                ip: data.ip
+            });
+        })
+        .catch(error => console.error("Geolocation API error:", error));
+}
 
       // Call function on page load
       trackVisitorLocation();
