@@ -63,3 +63,4 @@ if (typeof emailjs === "undefined") {
     // Call function on page load
     trackVisitorLocation();
 }
+  }); 
