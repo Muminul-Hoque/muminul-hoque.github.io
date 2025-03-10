@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
           emailjs.send("service_d0c3u1s", "template_f9eecgi", params) // Replace with your Service & Template IDs
               .then(function(response) {
-                  console.log('Email sent successfully', response);
+                  //console.log('Email sent successfully', response);
               })
               .catch(function(error) {
-                  console.error('Email sending failed', error);
+                  //console.error('Email sending failed', error);
               });
       }
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("https://ipinfo.io/json?token=2215e8e7158689")  // Replace YOUR_TOKEN with a free API key
         .then(response => response.json())
         .then(data => {
-            console.log("Visitor Location:", data);
+            //console.log("Visitor Location:", data);
 
             sendEmail({
                 city: data.city,
