@@ -413,7 +413,8 @@ ul {
     margin-bottom: 1.5rem;
   }
 }
-/* Technical Skills & Research Interests Section */
+
+/* Interests & Education Section */
 .skills-research-section {
   margin-top: 2rem;
 }
@@ -429,24 +430,35 @@ ul {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
+  flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .skills-research-container .left-column-skills,
 .skills-research-container .right-column-skills {
-  flex: 1;
+  flex: 1 1 45%; /* Ensures equal width */
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
 .skills-research-container h3 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   color: #333;
+  border-bottom: 2px solid #007bff; /* Adds a subtle underline */
+  padding-bottom: 5px;
 }
 
-.skills-research-container p,
 .skills-research-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-research-container ul li {
   font-size: 1rem;
   color: #555;
-  line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
 
 /* Responsive adjustments */
@@ -454,7 +466,14 @@ ul {
   .skills-research-container {
     flex-direction: column;
   }
+  
+  .skills-research-container .left-column-skills,
+  .skills-research-container .right-column-skills {
+    flex: 1;
+    width: 100%;
+  }
 }
+
 
 .download-btn {
   display: inline-block;
