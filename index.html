@@ -1,6 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammed Muminul Hoque - Personal Website</title>
+  <meta name="description" content="Muhammed Muminul Hoque - About, Research, Academics, and Extra Curriculum Activity">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NBJKVNGM');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- EmailJS Scripts -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBJKVNGM"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    <div class="wrapper">
+      <a class="site-title" href="#">Muhammed Muminul Hoque</a>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#academics">Academics</a>
+        <a href="#extracurricular">Extra Curriculum</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="wrapper">
+      <div class="about-container">
+        <!-- Left Column: Profile & Contact Info -->
+        <div class="left-column">
+          <img src="assets/website.png" alt="Profile Picture" class="profile-img">
+          <br><br>
+          <h1>Muhammed Muminul Hoque</h1>
+          <br>
+          <a href="assets/Muhammed_Muminul_Hoque_CV.pdf" download class="download-btn">Download CV</a>
+          <br><br>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:muminul951@gmail.com">muminul951@gmail.com</a>
+          </p>
+          <p>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/muminul-hoque" target="_blank">muminul-hoque</a>
+          </p>
+          <p>
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/Muminul-Hoque" target="_blank">Muminul-Hoque</a>
+          </p>
+        </div>
+        <!-- Right Column: About Text, Research Interests & Education -->
+        <div class="right-column">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I am Muhammed Muminul Hoque, an aspiring researcher passionate about cybersecurity, digital identity security, and cryptographic solutions. I hold a B.Sc. in Computer Science and Engineering from the University of Dhaka and am currently seeking opportunities for an MS/PhD to contribute to cutting-edge research in cybersecurity. My interests include privacy-preserving digital identity verification, AES encryption, two-factor authentication, and quantum-resistant blockchain security using lattice-based cryptosystems. I am committed to continuous learning, innovation, and making a meaningful impact in the field of cybersecurity.
+            </p>
+            <p>
+              With a strong foundation in computer science and a deep interest in cyber defense, I pursue opportunities to develop innovative solutions in cybersecurity. I am committed to solving real-world problems through technology and am constantly expanding my knowledge and skills to stay ahead in this ever-evolving field.
+            </p>
+          </div>
+          <section class="skills-research-section">
+            <div class="skills-research-container">
+              <!-- Research Interests -->
+              <div class="left-column-skills">
+                <h3>Research Interests</h3>
+                <ul>
+                  <li>Cryptography</li>
+                  <li>Data Privacy & Protection</li>
+                  <li>Machine Learning</li>
+                  <li>Data Security</li>
+                  <li>Blockchain Security</li>
+                  <li>Lattice-Based Cryptography</li>
+                  <li>Post-Quantum Cryptography</li>
+                </ul>
+              </div>
+              <!-- Education Info -->
+              <div class="right-column-skills">
+                <h3>Education</h3>
+                <ul>
+                  <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    BSc in Computer Science & Engineering, 2024<br>
+                    <span class="university-name">University of Dhaka</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    Higher Secondary Certificate, 2018<br>
+                    <span class="university-name">Islamia Degree College</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    Secondary School Certificate, 2016<br>
+                    <span class="university-name">Darul Ulum Alia Madrasha</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="wrapper">
+      <h2>Research Experience</h2>
+      <h3>Conference Paper</h3>
+      <p><em>Privacy Preserving and Secure Digital Identity Verification Mechanism</em> (2025 - In Press)</p>
+      <ul>
+        <li>Presented at 4th International Conference on Electrical, Computer, and Communication Engineering</li>
+      </ul>
+      <div class="research-container">
+        <div class="research-text">
+          <p>
+            Abstract—The concept of digital identity has gained prominence in the digital interconnected world, defined by ubiquitous online interactions and transactions. Digital identity verification has become essential, facilitating effortless access to numerous services. Nonetheless, it poses considerable security concerns, including inadequate encryption standards, susceptibility to identity theft and fraud, low user awareness, and dependencies on obsolete verification mechanisms, among others. This research provides an innovative security solution for digital identity verification using an AES-encrypted smart national identification card combined with a two-factor OTP authentication mechanism. AES encryption offers formidable security by encoding sensitive data, rendering it exceedingly challenging for unauthorized individuals to get access. When integrated with intelligent NID, it guarantees that only authorized users can authenticate their identity. Two-factor OTP enhances security by necessitating a secondary verification method, delivered to a user’s mobile device. This combination markedly diminishes the danger of identity theft, unauthorized access, and data breaches, thereby safeguarding users’ personal and sensitive information in the digital realm. This strategy enhances user confidence in digital services while facilitating secure and dependable access to vital internet platforms, hence fostering digital inclusion in developing nations.
+          </p>
+        </div>
+        <div class="research-image">
+          <img src="assets/ECCE.jpeg" alt="Privacy Preserving and Secure Digital Identity Verification" class="research-img">
+        </div>
+      </div>
+      <br><br>
+      <h3>Journal Publication</h3>
+      <p><em>Quantum-Resistant Blockchain</em> (2025 - Submitted)</p>
+      <ul>
+        <li>Enhanced Blockchain Security with ROUND5 (Lattice-based Cryptosystem)</li>
+        <li>Submitted to Q1 Journal</li>
+      </ul>
+      <div class="research-container">
+        <div class="research-text">
+          <p>
+            Abstract—Traditional cryptographic techniques that form the basis of blockchain security are becoming more vulnerable to quantum attacks as a result of the development of quantum computing. With an emphasis on the Round5 algorithm, this paper explores the use of quantum-resistant cryptographic algorithms to strengthen blockchain systems. Round5 operates as an all-purpose secure, low-complexity cryptosystem with guaranteed security levels against both classical and quantum threats, sustaining technological evolution in the future; without such an adjustment, all blockchain improvements will be at risk. This assessment involves understanding how blockchain relies on cryptography for secure transactions and privacy, the potentially disruptive benefits of quantum computing, and the potential for ROUND5—a lattice-based cryptographic solution—to be integrated into a blockchain for better safety and operation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="wrapper">
+      <!-- Education -->
+      <section class="education-section">
+        <h2>Education</h2>
+        <div class="education-item section-item">
+          <div class="text-content">
+            <p><strong>Bachelor of Science in Computer Science & Engineering</strong></p>
+            <p>University of Dhaka, Bangladesh | February 2019–March 2024</p>
+            <ul>
+              <li>GPA: 3.35/ 4.00 (3.58 in last 60 credits)</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/duLogo-1982435111.png" alt="University of Dhaka" class="education-img">
+          </div>
+        </div>
+      </section>
+      <!-- Project Work -->
+      <section class="project-work-section">
+        <h2>Project Work</h2>
+        <div class="project-item section-item">
+          <div class="text-content">
+            <p><strong>Developing A Machine Learning Based Speech Emotion Recognizer</strong> (2024)</p>
+            <ul>
+              <p>System identifies and classifies emotions from speech using real-time analysis</p>
+              <li><strong>Tools Used:</strong> JupyterLab, Python</li>
+              <li><strong>Supervisor:</strong> Prof. Md. Alamgir Hossain</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/happy.png" alt="Speech Emotion Recognizer Project 1" class="project-img">
+          </div>
+          <div class="image-content">
+            <img src="assets/Happy_spectogram.png" alt="Speech Emotion Recognizer Project 2" class="project-img">
+          </div>
+        </div>
+        <div class="project-item section-item">
+          <div class="text-content">
+            <p><strong>Automated Solar Positioning System using Arduino and LDR</strong> (2023)</p>
+            <ul>
+              <p>The project utilizes Light Dependent Resistors (LDRs) and Arduino to track and adjust the position of solar panels, maximizing energy efficiency by aligning them with the sun's movement throughout the day.</p>
+              <li><strong>Tools Used:</strong> Arduino Uno, Servo Motor, LDR Module, Solar Panel</li>
+              <li><strong>Supervisor:</strong> Khaleda Ferdousi [Assistant Professor (CSE)]</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/Solar_Tracker.jpeg" alt="Automated Solar Positioning System" class="project-img">
+          </div>
+        </div>
+      </section>
+      <!-- Certifications & Online Courses -->
+      <section class="certifications-section">
+        <h2>Certifications & Online Courses</h2>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Cybersecurity for Everyone</strong> (2025)</p>
+            <ul>
+              <li><strong>Platform:</strong> Coursera</li>
+              <li><strong>Description:</strong> An online non-credit course authorized by <span class="highlight">University of Maryland, College Park</span>, covering foundational cybersecurity concepts.</li>
+              <li><strong>Instructor:</strong> Charles Harry, Ph.D., Associate Research Professor, School of Public Policy, University of Maryland, College Park.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/University_Of_Maryland.png" alt="Cybersecurity for Everyone Certificate" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Ethical Hacking: Hacking with Python</strong> (2025)</p>
+            <ul>
+              <li><strong>Platform:</strong> Udemy</li>
+              <li><strong>Description:</strong> Focuses on creating various hacking scripts using Python for penetration testing, network security, and automation of ethical hacking tasks.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/Hacking with Python.jpg" alt="Ethical Hacking Certificate" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Cyber Security: OS Security</strong> (2025)</p>
+            <ul>
+              <li><strong>Platform:</strong> Udemy</li>
+              <li><strong>Description:</strong> Covers OS security fundamentals, threat mitigation, and best practices.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/OS Security.jpg" alt="OS Security Certificate" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Cyber Security Fundamentals in Bangla</strong> (2023)</p>
+            <ul>
+              <li><strong>Platform:</strong> Udemy</li>
+              <li><strong>Description:</strong> Fundamentals of cybersecurity explained in Bangla.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/Cyber Security Fundamentals in Bangla.jpg" alt="Cyber Security Fundamentals in Bangla" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>OSINT in 90 minutes: Power of Public Information 2023+ PROF</strong> (2023)</p>
+            <ul>
+              <li><strong>Platform:</strong> Coursera</li>
+              <li><strong>Description:</strong> Quick guide on OSINT techniques and tools.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/OSINT in 90 minutes.jpg" alt="OSINT Certificate" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Linux Modules</strong> (2023)</p>
+            <ul>
+              <li><strong>Platform:</strong> Udemy</li>
+              <li><strong>Description:</strong> In-depth Linux modules and command-line skills.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/Linux_Modules.jpg" alt="Linux Modules Certificate" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Social Engineering: 13 Social Engineering Attacks Explained!</strong> (2023)</p>
+            <ul>
+              <li><strong>Platform:</strong> Coursera</li>
+              <li><strong>Description:</strong> Overview of common social engineering techniques.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/13_Social_Engineering_Attack.jpg" alt="Social Engineering Certificate" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Malware Analysis</strong> (2023)</p>
+            <ul>
+              <li><strong>Platform:</strong> Udemy</li>
+              <li><strong>Description:</strong> Techniques and tools for malware analysis.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/13_Social_Engineering_Attack.jpg" alt="Malware Analysis Certificate" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Practical Password Cracking Office Files | Ethical Hacking</strong> (2023)</p>
+            <ul>
+              <li><strong>Platform:</strong> Coursera</li>
+              <li><strong>Description:</strong> Hands-on techniques for ethical password cracking.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/Practical_Password_Cracking_Office_Files.jpg" alt="Password Cracking Certificate" class="certification-img">
+          </div>
+        </div>
+        <div class="certification-item section-item">
+          <div class="text-content">
+            <p><strong>Ethical Hacking: File Inclusion</strong> (2023)</p>
+            <ul>
+              <li><strong>Platform:</strong> Udemy</li>
+              <li><strong>Description:</strong> Understanding file inclusion vulnerabilities.</li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="assets/File_inclusion.jpg" alt="File Inclusion Certificate" class="certification-img">
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Extra Curriculum Section -->
+    <section id="extracurricular" class="wrapper">
+      <!-- Certificates -->
+      <section class="certificate-section">
+        <div class="certificate-item section-item">
+          <div class="text-content">
+            <h2>6 Month Self Learning Bootcamp</h2>
+            <p>
+              This certificate is awarded for outstanding performance in cybersecurity training.
+              It represents dedication, skill, and commitment to excellence in the field.
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="assets/6_month_mission.png" alt="6 Month Self Learning Bootcamp" class="certificate-img">
+          </div>
+        </div>
+        <div class="certificate-item section-item">
+          <div class="text-content">
+            <h2>Cyber Security For Professionals</h2>
+            <p>
+              This certificate is awarded for outstanding performance in cybersecurity training.
+              It represents dedication, skill, and commitment to excellence in the field.
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="assets/Batch_Topper.png" alt="Cyber Security For Professionals" class="certificate-img">
+          </div>
+        </div>
+      </section>
+      <!-- Achievements -->
+      <section class="achievements-list">
+        <div class="achievement-item section-item">
+          <div class="text-content">
+            <h2>Champion of Invisible CTF 2023</h2>
+            <p>
+              Recognized as the top performer in the Invisible CTF competition.
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="assets/Invisible_CTF_Contest.jpeg" alt="Champion of Invisible CTF 2023" class="achievement-img">
+          </div>
+        </div>
+        <div class="achievement-item section-item full-width">
+          <div class="text-content">
+            <h2>3rd Place at MEC CSE Carnival 2020</h2>
+            <p>
+              Earned 3rd place in the highly competitive MEC CSE Carnival programming competition.
+            </p>
+          </div>
+        </div>
+        <div class="achievement-item section-item">
+          <div class="text-content">
+            <h2>Ranked in Top 6% in TryHackMe</h2>
+            <p>
+              Achieved a ranking within the top 6% among TryHackMe users.
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="assets/Introduction_to_Cyber_Security_Learning_Path_(Certificate).png" alt="Introduction to Cyber Security Learning Path" class="achievement-img">
+          </div>
+          <div class="image-content">
+            <img src="assets/Pre_Security_Learning_Path(Certificate).png" alt="Pre Security Learning Path" class="achievement-img">
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <p>© 2025 Muhammed Muminul Hoque</p>
+    </div>
+  </footer>
+
+<!--  <script src="script.js"></script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+<![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -132,3 +549,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </body>
 </html>
+]]>
