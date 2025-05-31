@@ -64,11 +64,13 @@ main {
   margin-top: 2rem;
 }
 .profile-img {
-  width: 450px; /* Adjust as needed */
-  height: 450px; /* Makes it a square */
-  object-fit: cover; /* Ensures it covers the box without distortion */
-  border-radius: 0; /* Ensures no rounded corners */
+  width: 180px;          /* Adjust width to suit your layout */
+  height: auto;          /* Maintain aspect ratio */
+  border-radius: 10%;    /* Makes it circular */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  object-fit: cover;     /* Crop excess area if needed */
 }
+
 
 /* Section Container for each item */
 .section-item {
