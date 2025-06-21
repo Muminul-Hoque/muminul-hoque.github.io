@@ -556,11 +556,16 @@ ul {
   font-style: italic; /* Optional: Italicize for a refined look */
 }
 
-.highlight-red {
-  color: #cc0000;
-  font-weight: bold;
-}
 .highlight-green {
   color: #2a7f62;
   font-weight: bold;
 }
+.highlight-blue {
+  color: #0056b3;
+  font-weight: bold;
+}
+.highlight-red {
+  color: #cc0000;
+  font-weight: bold;
+}
+
