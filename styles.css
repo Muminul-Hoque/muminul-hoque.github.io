@@ -10,7 +10,9 @@ body {
   color: #333;
   background: #fff;
   line-height: 1.6;
+  text-align: justify; /* ✅ Add this line to justify everything */
 }
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
