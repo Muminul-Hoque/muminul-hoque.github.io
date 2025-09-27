@@ -13,10 +13,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me - Muhammed Muminul Hoque</title>
-  <meta name="description" content="Muhammed Muminul Hoque - About, Research, Academics, and Extra Curriculum Activity"><button id="theme-toggle" class="download-btn">Toggle Dark/Light Mode</button>
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <meta name="description" content="Muhammed Muminul Hoque - About, Research, Academics, and Extra Curriculum Activity">
   <!-- Google tag (gtag.js) & EmailJS Scripts -->
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
   <script>
@@ -50,15 +47,13 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <header>
-    <div class="wrapper">
-      <a class="site-title" href="#about">Muhammed Muminul Hoque</a>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#research">Research</a>
-        <a href="#academics">Academics</a>
-        <a href="#extracurricular">Extra Curriculum</a>
-      </nav>
-    </div>
+    <a href="#" class="site-title">Muhammed Muminul Hoque</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="download-btn">Toggle Dark/Light Mode</button>
   </header>
 
   <main>
@@ -319,59 +314,64 @@
           </div>
         </div>
       </section>
-      <!-- Project Work -->
-      <section class="project-work-section">
-        <h2>Project Work</h2>
+     <!-- Project Work -->
+<section class="project-work-section">
+  <h2>Project Work</h2>
 
-        <p><em><span class="highlight-blue"><strong>4chan Toxicity Analysis: Comparative Study Using OpenAI & Perspective APIs</strong></em></span> (2025)</p>
-<p><a href="https://github.com/Muminul-Hoque/4chan-toxicity-analysis" target="_blank">[View on GitHub]</a></p>
-<ul>
-  <li>Analyzed toxic content on 4chan’s /pol/ board using OpenAI Moderation API and Google Perspective API.</li>
-  <li>Preprocessed posts, applied rate limiting, and stored structured JSON datasets.</li>
-  <li>Computed toxicity metrics (hate, harassment, sexual, threats, profanity) and compared model agreement.</li>
-  <li>Generated visualizations to highlight moderation differences between the two APIs.</li>
-</ul>
+  <!-- Scatterplot Project -->
+  <div class="project-item">
+    <p><em><span class="highlight-blue"><strong>4chan Toxicity Analysis: Comparative Study Using OpenAI & Perspective APIs</strong></span></em> (2025)</p>
+    <p><a href="https://github.com/Muminul-Hoque/4chan-toxicity-analysis" target="_blank">[View on GitHub]</a></p>
+    <ul>
+      <li>Analyzed toxic content on 4chan’s /pol/ board using OpenAI Moderation API and Google Perspective API.</li>
+      <li>Preprocessed posts, applied rate limiting, and stored structured JSON datasets.</li>
+      <li>Computed toxicity metrics (hate, harassment, sexual, threats, profanity) and compared model agreement.</li>
+      <li>Generated visualizations to highlight moderation differences between the two APIs.</li>
+    </ul>
 
+    <div class="project-img-container">
+      <img src="assets/scatter_toxicity.png" alt="OpenAI vs Perspective Toxicity Scatterplot">
+      <p class="caption"><em>Figure: Scatterplot comparing toxicity scores from OpenAI and Perspective APIs.</em></p>
+      <p class="caption-note">
+        Additional figures (toxicity distributions, correlation heatmaps) are available in the 
+        <a href="https://github.com/Muminul-Hoque/4chan-toxicity-analysis" target="_blank">GitHub repository</a>.
+      </p>
+    </div>
+  </div>
 
-<div style="text-align:center; margin-top:15px;">
-  <img src="assets/scatter_toxicity.png" alt="OpenAI vs Perspective Toxicity Scatterplot" width="70%">
-  <p><em>Figure: Scatterplot comparing toxicity scores from OpenAI and Perspective APIs.</em></p>
-  <p style="font-size: 0.9em; color: gray;">
-    Additional figures (toxicity distributions, correlation heatmaps) are available in the 
-    <a href="https://github.com/Muminul-Hoque/4chan-toxicity-analysis" target="_blank">GitHub repository</a>.
-  </p>
-</div>
-<br>
-        <div class="project-item section-item">
-          <div class="text-content">
-            <p><strong>Developing A Machine Learning Based Speech Emotion Recognizer</strong> (2024)</p>
-            <ul>
-              <p>System identifies and classifies emotions from speech using real‑time analysis</p>
-              <li><strong>Tools Used:</strong> JupyterLab, Python</li>
-              <li><strong>Supervisor:</strong> Prof. Md. Alamgir Hossain</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/happy.png" alt="Speech Emotion Recognizer Project 1" class="project-img">
-          </div>
-          <div class="image-content">
-            <img src="assets/Happy_spectogram.png" alt="Speech Emotion Recognizer Project 2" class="project-img">
-          </div>
-        </div>
-        <div class="project-item section-item">
-          <div class="text-content">
-            <p><strong>Automated Solar Positioning System using Arduino and LDR</strong> (2023)</p>
-            <ul>
-              <p>The project utilizes Light Dependent Resistors (LDRs) and Arduino to track and adjust the position of solar panels, maximizing energy efficiency by aligning them with the sun's movement throughout the day.</p>
-              <li><strong>Tools Used:</strong> Arduino Uno, Servo Motor, LDR Module, Solar Panel</li>
-              <li><strong>Supervisor:</strong> Khaleda Ferdousi [Assistant Professor (CSE)]</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/Solar_Tracker.jpeg" alt="Automated Solar Positioning System" class="project-img">
-          </div>
-        </div>
-      </section>
+  <!-- Other Projects -->
+  <div class="project-item section-item">
+    <div class="text-content">
+      <p><strong>Developing A Machine Learning Based Speech Emotion Recognizer</strong> (2024)</p>
+      <ul>
+        <p>System identifies and classifies emotions from speech using real‑time analysis</p>
+        <li><strong>Tools Used:</strong> JupyterLab, Python</li>
+        <li><strong>Supervisor:</strong> Prof. Md. Alamgir Hossain</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="assets/happy.png" alt="Speech Emotion Recognizer Project 1" class="project-img">
+    </div>
+    <div class="image-content">
+      <img src="assets/Happy_spectogram.png" alt="Speech Emotion Recognizer Project 2" class="project-img">
+    </div>
+  </div>
+
+  <div class="project-item section-item">
+    <div class="text-content">
+      <p><strong>Automated Solar Positioning System using Arduino and LDR</strong> (2023)</p>
+      <ul>
+        <p>The project utilizes Light Dependent Resistors (LDRs) and Arduino to track and adjust the position of solar panels, maximizing energy efficiency by aligning them with the sun's movement throughout the day.</p>
+        <li><strong>Tools Used:</strong> Arduino Uno, Servo Motor, LDR Module, Solar Panel</li>
+        <li><strong>Supervisor:</strong> Khaleda Ferdousi [Assistant Professor (CSE)]</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="assets/Solar_Tracker.jpeg" alt="Automated Solar Positioning System" class="project-img">
+    </div>
+  </div>
+</section>
+
       <!-- Certifications & Online Courses -->
       <section class="certifications-section">
         <h2>Certifications & Online Courses</h2>
