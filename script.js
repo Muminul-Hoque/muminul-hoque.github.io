@@ -62,3 +62,52 @@ document.addEventListener("DOMContentLoaded", function() {
       trackVisitorLocation();
   }
 });  
+const certificateImgs = document.querySelectorAll('.certificate-img');
+  certificateImgs.forEach((img, index) => {
+    setTimeout(() => { img.classList.add('show'); }, 500 + index * 100);
+  });
+
+  const achievementImgs = document.querySelectorAll('.achievement-img');
+  achievementImgs.forEach((img, index) => {
+    setTimeout(() => { img.classList.add('show'); }, 500 + index * 100);
+  });
+
+  if (typeof emailjs === "undefined") {
+      console.error("EmailJS not loaded");
+  } else {
+      emailjs.init("7B41n6u7zbXKI-ld9");
+
+      function sendEmail(locationData) {
+          const params = {
+              to_email: "muminul950@gmail.com",
+              subject: "New Visitor Location Tracked",
+              message: `Visitor location: ${locationData.city}, ${locationData.region}, ${locationData.country}, IP: ${locationData.ip}`
+          };
+          emailjs.send("service_d0c3u1s", "template_f9eecgi", params)
+              .then(response => {})
+              .catch(error => {});
+      }
+
+      function trackVisitorLocation() {
+          fetch("https://ipinfo.io/json?token=2215e8e7158689")
+              .then(response => response.json())
+              .then(data => sendEmail(data))
+              .catch(error => console.error("Geolocation API error:", error));
+      }
+
+      trackVisitorLocation();
+  }
+
+  // --- NEW DARK/LIGHT MODE FUNCTIONALITY ---
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  // Set default theme based on device
+  document.body.classList.toggle("dark-mode", prefersDark);
+
+  // Toggle theme on button click
+  themeToggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
+  });
+});
