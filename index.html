@@ -1,51 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NBJKVNGM');
-  </script>
-  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me - Muhammed Muminul Hoque</title>
   <meta name="description" content="Muhammed Muminul Hoque - About, Research, Academics, and Extra Curriculum Activity">
-  <!-- Google tag (gtag.js) & EmailJS Scripts -->
+
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+  <!-- EmailJS -->
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-Y8003Y5P14');
-  </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <!-- Inline Styles for Sticky Header & Smooth Scrolling -->
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Inline Styles for Sticky Header & Smooth Scroll -->
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+    html { scroll-behavior: smooth; }
+    header { position: sticky; top: 0; z-index: 1000; }
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBJKVNGM"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
+  <!-- Header -->
   <header>
     <a href="#" class="site-title">Muhammed Muminul Hoque</a>
     <nav>
@@ -53,538 +32,174 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button id="theme-toggle" class="download-btn">Toggle Dark/Light Mode</button>
+    <button id="theme-toggle">Toggle Dark/Light Mode</button>
   </header>
 
+  <!-- Main Content -->
   <main>
- <section id="about" class="about-section wrapper">
-  <div class="about-container">
-    <!-- Left Column: Profile Picture & Contact Info -->
-    <div class="left-column">
-      <img src="assets/website.png" alt="Profile Picture" class="profile-img">
-      <br><br>
-      <h1>Muhammed Muminul Hoque</h1>
-      <p>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:muminul951@gmail.com">muminul951@gmail.com</a>
-      </p>
-      <p>
-        <i class="fab fa-linkedin"></i>
-        <a href="https://linkedin.com/in/muminul-hoque" target="_blank">muminul-hoque</a>
-      </p>
-      <p>
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/Muminul-Hoque" target="_blank">Muminul-Hoque</a>
-      </p>
-    </div>
 
-    <!-- Right Column: About Text + Education & Research -->
-    <div class="right-column">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I am Muhammed Muminul Hoque, an aspiring researcher with strong interests in privacy-preserving technologies, secure systems, and trustworthy AI. I completed my B.Sc. in Computer Science and Engineering from the 
-          <a href="https://du.ac.bd/" target="_blank">University of Dhaka</a>, building a foundation in systems, security, and applied machine learning. I am now preparing to pursue a Ph.D., aiming to design resilient, 
-          privacy-aware systems that strengthen trust in digital platforms.
-        </p>
-        <p>
-          My research interests lie at the intersection of cybersecurity, privacy, and intelligent systems. I am particularly motivated by challenges in digital identity protection, secure AI for low-resource environments, 
-          phishing detection with adaptive LLM pipelines, and usability-focused explainability methods.
-        </p>
+    <!-- About Section -->
+    <section id="about" class="wrapper">
+      <div class="about-container">
+        <!-- Left Column -->
+        <div class="left-column">
+          <img src="assets/website.png" alt="Profile Picture" class="profile-img">
+          <h1>Muhammed Muminul Hoque</h1>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:muminul951@gmail.com">muminul951@gmail.com</a></p>
+          <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/muminul-hoque" target="_blank">muminul-hoque</a></p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/Muminul-Hoque" target="_blank">Muminul-Hoque</a></p>
+        </div>
 
-        <!-- Side-by-Side Education & Research Interests -->
-        <div class="edu-research-container">
-          <!-- Education Column -->
-          <div class="edu-column">
-            <h3>Education</h3>
-            <ul>
-              <li>
-                <strong>B.Sc. in Computer Science & Engineering</strong><br>
-                University of Dhaka, 2024
-              </li>
-              <li>
-                <strong>Higher Secondary Certificate</strong><br>
-                Islamia Degree College, 2018
-              </li>
-              <li>
-                <strong>Secondary School Certificate</strong><br>
-                Darul Ulum Alia Madrasha, 2016
-              </li>
-            </ul>
-          </div>
+        <!-- Right Column -->
+        <div class="right-column">
+          <h2>About Me</h2>
+          <p>
+            I am Muhammed Muminul Hoque, an aspiring researcher with strong interests in privacy-preserving technologies, secure systems, and trustworthy AI. I completed my B.Sc. in Computer Science and Engineering from the 
+            <a href="https://du.ac.bd/" target="_blank">University of Dhaka</a>, building a foundation in systems, security, and applied machine learning. I am now preparing to pursue a Ph.D., aiming to design resilient, privacy-aware systems that strengthen trust in digital platforms.
+          </p>
+          <p>
+            My research interests lie at the intersection of cybersecurity, privacy, and intelligent systems. I am particularly motivated by challenges in digital identity protection, secure AI for low-resource environments, phishing detection with adaptive LLM pipelines, and usability-focused explainability methods.
+          </p>
 
-          <!-- Research Interests Column -->
-          <div class="research-column">
-            <h3>Research Interests</h3>
-            <ul>
-              <li><strong>Cybersecurity & Privacy</strong> — identity protection, phishing detection, secure systems</li>
-              <li><strong>Cryptography & Secure Computing</strong> — post-quantum crypto, lightweight crypto, hardware-assisted security</li>
-              <li><strong>Trustworthy AI & Explainability</strong> — AI/ML security, fairness, usability-focused explainability</li>
-              <li><strong>Human-Centered Security</strong> — privacy-preserving authentication, online trust, harmful content analysis</li>
-              <li><strong>Critical Infrastructure & Emerging Systems</strong> — cyber-physical security, blockchain, edge/IoT environments</li>
-            </ul>
+          <div class="edu-research-container">
+            <!-- Education Column -->
+            <div class="edu-column">
+              <h3>Education</h3>
+              <ul>
+                <li><strong>B.Sc. in Computer Science & Engineering</strong><br>University of Dhaka, 2024</li>
+                <li><strong>Higher Secondary Certificate</strong><br>Islamia Degree College, 2018</li>
+                <li><strong>Secondary School Certificate</strong><br>Darul Ulum Alia Madrasha, 2016</li>
+              </ul>
+            </div>
+
+            <!-- Research Interests Column -->
+            <div class="research-column">
+              <h3>Research Interests</h3>
+              <ul>
+                <li><strong>Cybersecurity & Privacy</strong> — identity protection, phishing detection, secure systems</li>
+                <li><strong>Cryptography & Secure Computing</strong> — post-quantum crypto, lightweight crypto, hardware-assisted security</li>
+                <li><strong>Trustworthy AI & Explainability</strong> — AI/ML security, fairness, usability-focused explainability</li>
+                <li><strong>Human-Centered Security</strong> — privacy-preserving authentication, online trust, harmful content analysis</li>
+                <li><strong>Critical Infrastructure & Emerging Systems</strong> — cyber-physical security, blockchain, edge/IoT environments</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="updates">
-  <h2>📝 Updates</h2>
-
-  <article class="update-entry">
-    <h3>July 2025</h3>
-    <p>
-      <strong><span class="highlight-blue">Paper Submitted</strong></span> to <a href="https://confbim.com/" target="_blank" style="color:#0073e6; text-decoration:none;"><em>BIM 2025</em></a>:<br>
-      <span class="highlight-green"><em>“Toward Accurate Urban Temperature Forecasting in Seoul: A Hybrid Ensemble of Bias-Corrected Machine and Deep Learning Models with Explainable AI.”</em></span><br>
-      This study integrates XGBoost, CNN, and SHAP/LIME to improve temperature prediction accuracy and interpretability. Co-authored with collaborators from University of Dhaka.
-    </p>
-
-    <p>
-      <strong><span class="highlight-blue">Paper Submitted</strong></span> to <a href="https://confbim.com/" target="_blank" style="color:#0073e6; text-decoration:none;"><em>BIM 2025</em></a>:<br>
-      <span class="highlight-green"><em>“A Comparative Analysis of Traditional and Ensemble Machine Learning Models for Phishing Email Detection with Explainable AI.”</em></span><br>
-      This paper evaluates the performance of traditional and ensemble ML models on phishing email datasets and applies SHAP and LIME to interpret classifier decisions. The study highlights trade-offs in accuracy, interpretability, and model behavior.
-    </p>
-  </article>
-</section>
-
-
-
-<section id="research" class="wrapper">
-  <h2>Research Experience</h2>
-
-  <!-- First Publication -->
-  <h3>Conference Publication</h3>
-  <p>
-    <em><span class="highlight-green"><strong>Privacy-Preserving and Secure Digital Identity Verification Mechanism: AES-Encrypted Smart NID with Two-Factor Protection Against Unauthorized Access</strong></span></em><br>
-    <span style="color: #555;">Accepted at the 4<sup>th</sup> International Conference on Electrical, Computer, and Communication Engineering (ECCE 2025), CUET, Chattogram, Bangladesh</span><br>
-    <a href="https://doi.org/10.1109/ECCE64574.2025.11012996" target="_blank" style="color: #0073e6; text-decoration: none;">DOI: 10.1109/ECCE64574.2025.11012996</a>
-  </p>
-
-  <ul>
-    <li><strong>Authors:</strong> Ekram Hossain, Puja Rani Saha, <strong><u>Muhammed Muminul Hoque</u></strong>, Md. Saiful Islam, Jonayed Al-Faruk, Md. Alamgir Hossain</li>
-  </ul>
-
-  <div class="research-container">
-    <div class="research-text" style="text-align: justify;">
-      <h4>Key Contributions</h4>
-      <ul>
-        <li>Developed a secure identity verification system combining AES-256 encryption and OTP-based two-factor authentication (2FA).</li>
-        <li>Encrypted and protected smart NID images to prevent unauthorized access and identity misuse.</li>
-        <li>Designed a privacy-respecting framework with secure key generation, identity verification, and user-friendly deployment pathways.</li>
-      </ul>
-
-      <h4>Research Significance</h4>
-      <ul>
-        <li>Addresses critical digital identity challenges in resource-constrained environments with a technically efficient and scalable architecture.</li>
-        <li>Bridges security and usability, providing real-world applicability in e-governance and national digital infrastructure.</li>
-        <li>Contributes to the evolving landscape of privacy-aware identity management systems relevant for public sector transformation.</li>
-      </ul>
-    </div>
-    <div class="research-image">
-      <img src="assets/Methodologydrawio.drawio (1).png" alt="End-to-end flow of AES-encrypted Smart NID verification with two-factor authentication" class="research-img" style="max-width: 100%; border-radius: 8px; box-shadow: 0px 2px 10px rgba(0,0,0,0.1);">
-    </div>
-  </div>
-
-  <hr style="margin: 2rem 0;">
-
-  <!-- Second Paper -->
-  <p>
-    <span class="highlight-red"><strong><em>A Comparative Analysis of Traditional and Ensemble Machine Learning Models for Phishing Email Detection with Explainable AI</em></strong></span><br>
-    <span style="color: #555;">Submitted to: International Conference on Big Data, IoT and Machine Learning (BIM 2025)</span>
-  </p>
-  <ul>
-    <li><strong>Authors:</strong> <strong><u>Muhammed Muminul Hoque</u></strong>, Jonayed Al Faruk, Dipta Barua, Md. Bodrul Islam, Susmoy Paul, Joyonto Das</li>
-    <li>Benchmarks traditional (e.g., Decision Tree) and ensemble (e.g., Random Forest, XGBoost) classifiers.</li>
-    <li>Uses SHAP and LIME to evaluate feature importance and improve model transparency.</li>
-    <li>Analyzes model performance across accuracy, precision-recall, and interpretability metrics.</li>
-  </ul>
-
-  <div class="research-container">
-    <div class="research-text" style="text-align: justify;">
-      <h4>Research Significance</h4>
-      <ul>
-        <li>Bridges model performance and interpretability in phishing detection pipelines.</li>
-        <li>Offers insights into trade-offs between simplicity, power, and transparency in ML-based security systems.</li>
-        <li>Provides guidance for selecting explainable and performant models for phishing mitigation efforts.</li>
-      </ul>
-    </div>
-  </div>
-
-  <hr style="margin: 2rem 0;">
-
-  <!-- Third Paper -->
-  <p>
-    <span class="highlight-red"><strong><em>Toward Accurate Urban Temperature Forecasting in Seoul: A Hybrid Ensemble of Bias-Corrected Machine and Deep Learning Models with Explainable AI</em></strong></span><br>
-    <span style="color: #555;">Submitted to: International Conference on Big Data, IoT and Machine Learning (BIM 2025)</span>
-  </p>
-  <ul>
-    <li><strong>Authors:</strong> Jonayed Al Faruk, <strong><u>Muhammed Muminul Hoque</u></strong>, Md. Nawaz Shorif, Susmoy Paul, Md. Bodrul Islam, Joyonto Das</li>
-    <li>Explores hybrid forecasting models including XGBoost, KNN, CNN, SVR, and Feedforward Neural Networks.</li>
-    <li>Applies SHAP and LIME to explain meteorological and topographic feature contributions.</li>
-    <li>Evaluates model accuracy under bias correction and ensemble integration techniques.</li>
-  </ul>
-
-  <div class="research-container">
-    <div class="research-text" style="text-align: justify;">
-      <h4>Research Significance</h4>
-      <ul>
-        <li>Improves understanding of urban microclimate forecasting using explainable AI.</li>
-        <li>Supports data-driven climate policies through interpretable temperature prediction models.</li>
-        <li>Demonstrates robust forecasting in complex urban environments using hybrid learning strategies.</li>
-      </ul>
-    </div>
-  </div>
-
-  <hr style="margin: 2rem 0;">
-
-  <!-- Fourth Paper -->
-  <p>
-    <span class="highlight-red"><strong><em>Quantum-Resistant Blockchain: Enhancing Blockchain Security with ROUND5 — A Lattice-Based Cryptosystem</em></strong></span><br>
-    <span style="color: #555;">Submitted to: 7th International Conference on Sustainable Technologies for Industry 5.0 (STI 2025)</span>
-  </p>
-  <ul>
-    <li><strong>Authors:</strong> Puja Rani Saha, Md. Saiful Islam, Tushar Kanti Saha, <strong><u>Muhammed Muminul Hoque</u></strong>, AKM Bahalul Haque, Ekram Hossain</li>
-  </ul>
-
-  <div class="research-container">
-    <div class="research-text" style="text-align: justify;">
-      <h4>Key Findings</h4>
-      <ul>
-        <li>Applied the lattice-based ROUND5 cryptosystem to blockchain protocols for post-quantum security.</li>
-        <li>Demonstrated strong resistance to quantum attacks without significant computational overhead.</li>
-        <li>Validated scalability and feasibility of ROUND5 through comparative analysis with traditional cryptographic models.</li>
-      </ul>
-
-      <h4>Contribution and Significance</h4>
-      <ul>
-        <li>Provides a forward-looking cryptographic solution for ensuring long-term blockchain integrity in the quantum era.</li>
-        <li>Helps future-proof decentralized systems against emerging cryptographic threats.</li>
-        <li>Promotes the integration of quantum-resilient algorithms into real-world blockchain infrastructures.</li>
-      </ul>
-    </div>
-  </div>
-
-  <h3>Ongoing Research</h3>
-
-<p><em><span class="highlight-red"><strong>Adaptive Phishing Email Detection via Multiple LLMs: A Dynamic Keyword Based Approach</strong></em></span> (2025 - Ongoing)</p>
-<ul>
-  <li>Developing a multi-LLM pipeline (Gemini, DeepSeek, LLaMA, Grok) for extracting phishing indicators from emails.</li>
-  <li>Integrating static and adaptive keyword stores, candidate promotion, and Safe Browsing checks into the detection process.</li>
-  <li>Designing a continuous learning system where new phishing terms are promoted dynamically into the keyword snapshot.</li>
-  <li>Evaluating scalability, robustness, and adaptability across diverse phishing datasets, including Gmail, .eml, and CSV sources.</li>
-</ul>
-<div class="research-container">
-  <div class="research-text" style="text-align: justify;">
-    <p><strong>Research Significance:</strong></p>
-    <ul>
-      <li>Introduces an adaptive, self-updating phishing detection framework leveraging multiple large language models.</li>
-      <li>Addresses evolving phishing tactics by continuously expanding the keyword knowledge base.</li>
-      <li>Combines explainability (via keyword rationale) with automation for trustworthy and deployable security tools.</li>
-      <li>Supports real-time detection in multi-source environments (local inbox, Gmail, datasets) with robust risk scoring.</li>
-    </ul>
-  </div>
-</div>
-<br>
-
-  
-</section> 
-
-
-
-
-
-    <!-- Academics Section -->
-    <section id="academics" class="wrapper">
-      <!-- Education -->
-      <section class="education-section">
-        <h2>Education</h2>
-        <div class="education-item section-item">
-          <div class="text-content">
-            <p><strong>Bachelor of Science in Computer Science & Engineering</strong></p>
-            <p>University of Dhaka, Bangladesh | February 2019–March 2024</p>
-            <ul>
-              <li>GPA: 3.35/ 4.00 (3.58 in last 60 credits)</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/duLogo-1982435111.png" alt="University of Dhaka" class="education-img">
-          </div>
-        </div>
-      </section>
-     <!-- Project Work -->
-<section class="project-work-section">
-  <h2>Project Work</h2>
-
-  <!-- Scatterplot Project -->
-  <div class="project-item">
-    <p><em><span class="highlight-blue"><strong>4chan Toxicity Analysis: Comparative Study Using OpenAI & Perspective APIs</strong></span></em> (2025)</p>
-    <p><a href="https://github.com/Muminul-Hoque/4chan-toxicity-analysis" target="_blank">[View on GitHub]</a></p>
-    <ul>
-      <li>Analyzed toxic content on 4chan’s /pol/ board using OpenAI Moderation API and Google Perspective API.</li>
-      <li>Preprocessed posts, applied rate limiting, and stored structured JSON datasets.</li>
-      <li>Computed toxicity metrics (hate, harassment, sexual, threats, profanity) and compared model agreement.</li>
-      <li>Generated visualizations to highlight moderation differences between the two APIs.</li>
-    </ul>
-
-    <div class="project-img-container">
-      <img src="assets/scatter_toxicity.png" alt="OpenAI vs Perspective Toxicity Scatterplot">
-      <p class="caption"><em>Figure: Scatterplot comparing toxicity scores from OpenAI and Perspective APIs.</em></p>
-      <p class="caption-note">
-        Additional figures (toxicity distributions, correlation heatmaps) are available in the 
-        <a href="https://github.com/Muminul-Hoque/4chan-toxicity-analysis" target="_blank">GitHub repository</a>.
-      </p>
-    </div>
-  </div>
-
-  <!-- Other Projects -->
-  <div class="project-item section-item">
-    <div class="text-content">
-      <p><strong>Developing A Machine Learning Based Speech Emotion Recognizer</strong> (2024)</p>
-      <ul>
-        <p>System identifies and classifies emotions from speech using real‑time analysis</p>
-        <li><strong>Tools Used:</strong> JupyterLab, Python</li>
-        <li><strong>Supervisor:</strong> Prof. Md. Alamgir Hossain</li>
-      </ul>
-    </div>
-    <div class="image-content">
-      <img src="assets/happy.png" alt="Speech Emotion Recognizer Project 1" class="project-img">
-    </div>
-    <div class="image-content">
-      <img src="assets/Happy_spectogram.png" alt="Speech Emotion Recognizer Project 2" class="project-img">
-    </div>
-  </div>
-
-  <div class="project-item section-item">
-    <div class="text-content">
-      <p><strong>Automated Solar Positioning System using Arduino and LDR</strong> (2023)</p>
-      <ul>
-        <p>The project utilizes Light Dependent Resistors (LDRs) and Arduino to track and adjust the position of solar panels, maximizing energy efficiency by aligning them with the sun's movement throughout the day.</p>
-        <li><strong>Tools Used:</strong> Arduino Uno, Servo Motor, LDR Module, Solar Panel</li>
-        <li><strong>Supervisor:</strong> Khaleda Ferdousi [Assistant Professor (CSE)]</li>
-      </ul>
-    </div>
-    <div class="image-content">
-      <img src="assets/Solar_Tracker.jpeg" alt="Automated Solar Positioning System" class="project-img">
-    </div>
-  </div>
-</section>
-
-      <!-- Certifications & Online Courses -->
-      <section class="certifications-section">
-        <h2>Certifications & Online Courses</h2>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Cybersecurity for Everyone</strong> (2025)</p>
-            <ul>
-              <li><strong>Platform:</strong> Coursera</li>
-              <li><strong>Description:</strong> An online non‑credit course authorized by <span class="highlight">University of Maryland, College Park</span>, covering foundational cybersecurity concepts.</li>
-              <li><strong>Instructor:</strong> Charles Harry, Ph.D., Associate Research Professor, School of Public Policy, University of Maryland, College Park.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/University_Of_Maryland.png" alt="Cybersecurity for Everyone Certificate" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Ethical Hacking: Hacking with Python</strong> (2025)</p>
-            <ul>
-              <li><strong>Platform:</strong> Udemy</li>
-              <li><strong>Description:</strong> Focuses on creating various hacking scripts using Python for penetration testing, network security, and automation of ethical hacking tasks.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/Hacking with Python.jpg" alt="Ethical Hacking Certificate" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Cyber Security: OS Security</strong> (2025)</p>
-            <ul>
-              <li><strong>Platform:</strong> Udemy</li>
-              <li><strong>Description:</strong> Covers OS security fundamentals, threat mitigation, and best practices.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/OS Security.jpg" alt="OS Security Certificate" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Cyber Security Fundamentals in Bangla</strong> (2023)</p>
-            <ul>
-              <li><strong>Platform:</strong> Udemy</li>
-              <li><strong>Description:</strong> Fundamentals of cybersecurity explained in Bangla.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/Cyber Security Fundamentals in Bangla.jpg" alt="Cyber Security Fundamentals in Bangla" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>OSINT in 90 minutes: Power of Public Information 2023+ PROF</strong> (2023)</p>
-            <ul>
-              <li><strong>Platform:</strong> Coursera</li>
-              <li><strong>Description:</strong> Quick guide on OSINT techniques and tools.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/OSINT in 90 minutes.jpg" alt="OSINT Certificate" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Linux Modules</strong> (2023)</p>
-            <ul>
-              <li><strong>Platform:</strong> Udemy</li>
-              <li><strong>Description:</strong> In-depth Linux modules and command-line skills.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/Linux_Modules.jpg" alt="Linux Modules Certificate" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Social Engineering: 13 Social Engineering Attacks Explained!</strong> (2023)</p>
-            <ul>
-              <li><strong>Platform:</strong> Coursera</li>
-              <li><strong>Description:</strong> Overview of common social engineering techniques.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/13_Social_Engineering_Attack.jpg" alt="Social Engineering Certificate" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Malware Analysis</strong> (2023)</p>
-            <ul>
-              <li><strong>Platform:</strong> Udemy</li>
-              <li><strong>Description:</strong> Techniques and tools for malware analysis.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/13_Social_Engineering_Attack.jpg" alt="Malware Analysis Certificate" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Practical Password Cracking Office Files | Ethical Hacking</strong> (2023)</p>
-            <ul>
-              <li><strong>Platform:</strong> Coursera</li>
-              <li><strong>Description:</strong> Hands-on techniques for ethical password cracking.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/Practical_Password_Cracking_Office_Files.jpg" alt="Password Cracking Certificate" class="certification-img">
-          </div>
-        </div>
-        <div class="certification-item section-item">
-          <div class="text-content">
-            <p><strong>Ethical Hacking: File Inclusion</strong> (2023)</p>
-            <ul>
-              <li><strong>Platform:</strong> Udemy</li>
-              <li><strong>Description:</strong> Understanding file inclusion vulnerabilities.</li>
-            </ul>
-          </div>
-          <div class="image-content">
-            <img src="assets/File_inclusion.jpg" alt="File Inclusion Certificate" class="certification-img">
-          </div>
-        </div>
-      </section>
     </section>
 
-    <!-- Extra Curriculum Section -->
-    <section id="extracurricular" class="wrapper">
-      <!-- Certificates -->
-      <section class="certificate-section">
-        <div class="certificate-item section-item">
-          <div class="text-content">
-            <h2>6 Month Self Learning Bootcamp</h2>
-            <p>
-              This certificate is awarded for outstanding performance in cybersecurity training.
-              It represents dedication, skill, and commitment to excellence in the field.
-            </p>
-          </div>
-          <div class="image-content">
-            <img src="assets/6_month_mission.png" alt="6 Month Self Learning Bootcamp" class="certificate-img">
-          </div>
-        </div>
-        <div class="certificate-item section-item">
-          <div class="text-content">
-            <h2>Cyber Security For Professionals</h2>
-            <p>
-              This certificate is awarded for outstanding performance in cybersecurity training.
-              It represents dedication, skill, and commitment to excellence in the field.
-            </p>
-          </div>
-          <div class="image-content">
-            <img src="assets/Batch_Topper.png" alt="Cyber Security For Professionals" class="certificate-img">
-          </div>
-        </div>
-      </section>
-      <!-- Achievements -->
-      <section class="achievements-list">
-        <div class="achievement-item section-item">
-          <div class="text-content">
-            <h2>Champion of Invisible CTF 2023</h2>
-            <p>
-              Recognized as the top performer in the Invisible CTF competition.
-            </p>
-          </div>
-          <div class="image-content">
-            <img src="assets/Invisible_CTF_Contest.jpeg" alt="Champion of Invisible CTF 2023" class="achievement-img">
-          </div>
-        </div>
-        <div class="achievement-item section-item full-width">
-          <div class="text-content">
-            <h2>3rd Place at MEC CSE Carnival 2020</h2>
-            <p>
-              Earned 3rd place in the highly competitive MEC CSE Carnival programming competition.
-            </p>
-          </div>
-        </div>
-        <div class="achievement-item section-item">
-  <div class="text-content">
-    <h2>Participation in BAS Divisional Science Olympiad 2016</h2>
-    <p>
-      Received a Certificate of Participation from the Bangladesh Academy of Sciences (BAS) for taking part in the BAS Divisional Science Olympiad on January 8, 2016.
-    </p>
-  </div>
-  <div class="image-content">
-    <img src="assets/Science Olympiad.jpeg" alt="Participation in BAS Divisional Science Olympiad 2016" class="achievement-img">
-  </div>
-</div>
-
-        <div class="achievement-item section-item">
-          <div class="text-content">
-            <h2>Ranked in Top 6% in TryHackMe</h2>
-            <p>
-              Achieved a ranking within the top 6% among TryHackMe users.
-            </p>
-          </div>
-          <div class="image-content">
-            <img src="assets/Introduction_to_Cyber_Security_Learning_Path_(Certificate).png" alt="Introduction to Cyber Security Learning Path" class="achievement-img">
-          </div>
-          <div class="image-content">
-            <img src="assets/Pre_Security_Learning_Path(Certificate).png" alt="Pre Security Learning Path" class="achievement-img">
-          </div>
-        </div>
-      </section>
+    <!-- Updates Section -->
+    <section id="updates" class="wrapper">
+      <h2>📝 Updates</h2>
+      <article class="update-entry">
+        <h3>July 2025</h3>
+        <p><strong>Paper Submitted</strong> to <a href="https://confbim.com/" target="_blank"><em>BIM 2025</em></a>:<br>
+          <em>“Toward Accurate Urban Temperature Forecasting in Seoul: A Hybrid Ensemble of Bias-Corrected Machine and Deep Learning Models with Explainable AI.”</em>
+        </p>
+        <p><strong>Paper Submitted</strong> to <a href="https://confbim.com/" target="_blank"><em>BIM 2025</em></a>:<br>
+          <em>“A Comparative Analysis of Traditional and Ensemble Machine Learning Models for Phishing Email Detection with Explainable AI.”</em>
+        </p>
+      </article>
     </section>
+
+    <!-- Research Section -->
+    <section id="research" class="wrapper">
+      <h2>Research Experience</h2>
+      
+      <!-- Example Paper -->
+      <div class="research-item">
+        <h3>Conference Publication</h3>
+        <p><em><strong>Privacy-Preserving and Secure Digital Identity Verification Mechanism: AES-Encrypted Smart NID with Two-Factor Protection Against Unauthorized Access</strong></em><br>
+        Accepted at 4<sup>th</sup> International Conference on ECCE 2025, CUET, Chattogram, Bangladesh<br>
+        <a href="https://doi.org/10.1109/ECCE64574.2025.11012996" target="_blank">DOI Link</a>
+        </p>
+        <ul>
+          <li><strong>Authors:</strong> Ekram Hossain, Puja Rani Saha, <strong>Muhammed Muminul Hoque</strong>, Md. Saiful Islam, Jonayed Al-Faruk, Md. Alamgir Hossain</li>
+        </ul>
+        <div class="research-container">
+          <div class="research-text">
+            <h4>Key Contributions</h4>
+            <ul>
+              <li>Developed a secure identity verification system combining AES-256 encryption and OTP-based two-factor authentication (2FA).</li>
+              <li>Encrypted and protected smart NID images to prevent unauthorized access and identity misuse.</li>
+              <li>Designed a privacy-respecting framework with secure key generation, identity verification, and user-friendly deployment pathways.</li>
+            </ul>
+          </div>
+          <div class="research-image">
+            <img src="assets/Methodologydrawio.drawio (1).png" alt="AES Smart NID Flow" class="research-img">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add other papers here following the same structure -->
+    </section>
+
+    <!-- Project Work Section -->
+    <section id="projects" class="wrapper">
+      <h2>Project Work</h2>
+
+      <div class="project-item">
+        <p><em><strong>4chan Toxicity Analysis: Comparative Study Using OpenAI & Perspective APIs</strong></em> (2025)</p>
+        <p><a href="https://github.com/Muminul-Hoque/4chan-toxicity-analysis" target="_blank">[View on GitHub]</a></p>
+        <ul>
+          <li>Analyzed toxic content on 4chan’s /pol/ board using OpenAI and Perspective APIs.</li>
+          <li>Preprocessed posts and stored structured JSON datasets.</li>
+          <li>Computed toxicity metrics and compared model agreement.</li>
+          <li>Generated visualizations to highlight moderation differences.</li>
+        </ul>
+        <div class="project-img-container">
+          <img src="assets/scatter_toxicity.png" alt="OpenAI vs Perspective Toxicity Scatterplot">
+          <p class="caption"><em>Figure: Scatterplot comparing toxicity scores from OpenAI and Perspective APIs.</em></p>
+        </div>
+      </div>
+
+      <!-- Add other projects in same structure -->
+    </section>
+
+    <!-- Certifications & Courses Section -->
+    <section class="certifications-section wrapper">
+      <h2>Certifications & Online Courses</h2>
+      <!-- Each certification item -->
+      <div class="certification-item">
+        <div class="text-content">
+          <p><strong>Cybersecurity for Everyone</strong> (2025)</p>
+          <ul>
+            <li><strong>Platform:</strong> Coursera</li>
+            <li><strong>Instructor:</strong> Charles Harry, Ph.D.</li>
+          </ul>
+        </div>
+        <div class="image-content">
+          <img src="assets/University_Of_Maryland.png" alt="Cybersecurity Certificate" class="certification-img">
+        </div>
+      </div>
+      <!-- Add other certifications in same structure -->
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-list wrapper">
+      <h2>Achievements</h2>
+      <div class="achievement-item">
+        <div class="text-content">
+          <h3>Champion of Invisible CTF 2023</h3>
+          <p>Recognized as the top performer in the Invisible CTF competition.</p>
+        </div>
+        <div class="image-content">
+          <img src="assets/Invisible_CTF_Contest.jpeg" alt="Invisible CTF Champion" class="achievement-img">
+        </div>
+      </div>
+      <!-- Add other achievements similarly -->
+    </section>
+
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="wrapper">
       <p>© 2025 Muhammed Muminul Hoque</p>
     </div>
   </footer>
 
-<script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
