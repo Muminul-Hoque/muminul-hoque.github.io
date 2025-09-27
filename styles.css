@@ -1,323 +1,267 @@
+/* ==============================
+   Root Variables for Light/Dark Mode
+   ============================== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --secondary-text-color: #555555;
+  --accent-color: #007bff;
+  --highlight-red: #cc0000;
+  --highlight-green: #2a7f62;
+  --highlight-blue: #0056b3;
+  --card-bg: #f9f9f9;
+  --border-color: #ccc;
+  --shadow-color: rgba(0,0,0,0.1);
+}
 
-/* Shared Styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --secondary-text-color: #aaaaaa;
+    --accent-color: #66aaff;
+    --highlight-red: #ff6666;
+    --highlight-green: #66cc99;
+    --highlight-blue: #66bbff;
+    --card-bg: #1e1e1e;
+    --border-color: #333;
+    --shadow-color: rgba(0,0,0,0.5);
+  }
+}
+
+/* ==============================
+   Dark/Light Mode Toggle Class
+   ============================== */
+body.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.light-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ==============================
+   Shared Styles
+   ============================== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #333;
-  background: #fff;
   line-height: 1.6;
-  text-align: justify; /* ✅ Add this line to justify everything */
+  text-align: justify;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   Header & Navigation
+   ============================== */
+header {
+  background: var(--bg-color);
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  font-weight: bold;
+  padding: 0.5rem;
+  color: var(--text-color);
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* ==============================
+   Wrapper & Main Content
+   ============================== */
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Header & Footer */
-header {
-  background: #fff;
-  padding: 1rem;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Name on left, nav on right */
-}
-
-footer {
-  border-top: 1px solid #ccc;
-  border-bottom: none;
-  font-size: 14px;
-  color: #555;
-}
-.site-title {
-  font-size: 1.5rem;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin-left: 1rem; /* Adjust spacing */
-}
-
-/* 🔹 Navigation */
-nav {
-  display: flex; /* Keep links in one row */
-  gap: 1rem; /* Space between links */
-  margin-left: auto; /* Push navigation to right */
-}
-
-/* 🔹 Navigation Links */
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 0.5rem;
-}
-nav a:hover {
-  color: #007bff;
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-/* Main Content */
 main {
   margin-top: 2rem;
 }
-.profile-img {
-  width: 180px;          /* Adjust width to suit your layout */
-  height: auto;          /* Maintain aspect ratio */
-  border-radius: 10%;    /* Makes it circular */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  object-fit: cover;     /* Crop excess area if needed */
-}
 
-
-/* Section Container for each item */
-.section-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f9f9f9;
-  padding: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-/* Text Content (Left Side) */
-.text-content {
-  flex: 1;
-  text-align: left;
-}
-.text-content h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-.text-content p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.5;
-}
-
-/* Image Content (Right Side) */
-/* Only applies to images within .certificate-section and .achievements-list */
-.certificate-section .image-content,
-.achievements-list .image-content {
-  flex: 0 0 300px;
-  margin-left: 2rem;
-  max-width: 300px;
-}
-.certificate-section .image-content img,
-.achievements-list .image-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0; /* Start hidden for animation */
-}
-.certificate-section .image-content img.show,
-.achievements-list .image-content img.show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .section-item {
-    flex-direction: column;
-    text-align: center;
-  }
-  .certificate-section .image-content,
-  .achievements-list .image-content {
-    flex: 0 0 auto;
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-}
-
-/* -----------------------------------------------------------------
-   About Page Specific Layout (Does not affect Extra Curriculum)
-   ----------------------------------------------------------------- */
-/* Use this block on your About page only by wrapping the content
-   in a container with the class .about-section */
-.about-section {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  /* Prevent wrapping so the image stays on the left */
-  flex-wrap: nowrap;
-}
-.about-section {
-  /* Ensure the profile image retains its size and stays left */
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-.about-section .about-info {
-  flex: 1;
-  text-align: left;
-}
-/* 🔹 Responsive Header (Fix for Name & Nav) */
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 0.5rem; /* Reduces space between links */
-    margin-top: 10px; /* Adds some space */
-  }
-
-  .site-title {
-    text-align: center; /* Centers name on smaller screens */
-  }
-}
-/* About Container Layout */
+/* ==============================
+   About Section
+   ============================== */
 .about-container {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .about-container .left-column {
-  flex: 0 0 300px; /* Adjust as needed */
+  flex: 0 0 250px;
   text-align: center;
+}
+
+.about-container .left-column img.profile-img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10%;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  object-fit: cover;
 }
 
 .about-container .right-column {
   flex: 1;
 }
 
-/* Ensure the profile image looks good */
-.about-container .left-column .profile-img {
-  width: 100%;
-  border-radius: 10px;
-}
-/* (Optional) Adjust the download button spacing if needed */
 .download-btn {
   display: inline-block;
   margin-top: 1rem;
-}
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-container .left-column,
-  .about-container .right-column {
-    width: 100%;
-  }
-  .about-container .left-column {
-    margin-bottom: 1.5rem;
-  }
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#updates {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
+.download-btn:hover {
+  background-color: darken(var(--accent-color), 10%);
+  transform: scale(1.05);
 }
 
-#updates h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+/* ==============================
+   Skills & Research / Education Side-by-Side
+   ============================== */
+.skills-research-section {
+  margin-top: 2rem;
 }
 
-.update-entry {
-  margin-bottom: 25px;
-}
-
-.update-entry p {
-  text-align: justify;
-  line-height: 1.6;
-  font-size: 1rem;
-  padding: 10px 15px;
-  background-color: #f9f9f9;
-  border-left: 4px solid #007acc;
-  border-radius: 4px;
-}
-
-
-
-/* Research Section Layout */
-.research-container {
+.skills-research-container {
   display: flex;
-  align-items: center; /* Centers the items vertically */
-  justify-content: space-between; /* Space out text and image */
-  gap: 2rem; /* Adds gap between text and image */
-  margin-top: 2rem; /* Adds space above */
-}
-
-/* Text Section */
-.research-text {
-  flex: 1; /* Ensures text takes the remaining space */
-  text-align: left;
-}
-
-/* Image Section */
-.research-image {
-  flex: 0 0 45%; /* Ensure the image takes up about 45% of the width */
-}
-
-.research-img {
-  width: 100%; /* Makes the image responsive */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
-}
-
-/* Responsive Design for Small Screens */
-@media (max-width: 768px) {
-  .research-container {
-    flex-direction: column; /* Stack text and image on smaller screens */
-    text-align: center; /* Center the text */
-  }
-
-  .research-image {
-    flex: 0 0 auto; /* Ensure the image stays responsive */
-    margin-top: 1rem; /* Adds space between text and image on small screens */
-  }
-
-  .research-img {
-    max-width: 100%; /* Ensure the image is responsive */
-  }
-}
-p {
-  text-align: justify;
-  line-height: 1.6; /* Adjust line spacing */
-}
-/* New CSS for Academics Page */
-.section-item {
-  display: flex;
+  gap: 2rem;
   justify-content: space-between;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-research-container .left-column-skills,
+.skills-research-container .right-column-skills {
+  flex: 1 1 45%;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.skills-research-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 5px;
+  color: var(--text-color);
+}
+
+.skills-research-container ul li {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Education Icons & University Name */
+.right-column-skills ul li i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.university-name {
+  font-size: 0.85rem;
+  color: var(--secondary-text-color);
+  font-style: italic;
+}
+
+/* ==============================
+   Project / Research Section
+   ============================== */
+.section-item,
+.research-container,
+.certification-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .text-content {
   flex: 1;
-  padding-right: 20px;
 }
 
 .image-content {
-  flex: 1;
+  flex: 0 0 300px;
   text-align: center;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.image-content img:hover {
+  transform: scale(1.02);
+}
+
+.research-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+/* ==============================
+   Misc Styling
+   ============================== */
+p {
+  line-height: 1.6;
 }
 
 ul {
@@ -325,247 +269,35 @@ ul {
   padding: 0;
 }
 
-.education-img {
-  width: 30%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 10px;
-}
- .project-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 10px;
+.highlight-red { color: var(--highlight-red); font-weight: bold; }
+.highlight-green { color: var(--highlight-green); font-weight: bold; }
+.highlight-blue { color: var(--highlight-blue); font-weight: bold; }
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+  border-top: 1px solid var(--border-color);
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  padding: 1rem;
+  text-align: center;
 }
 
-.achievement-img {
-  width: 50%;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 8px;
-}
-/* Certifications & Online Courses Section */
-.certifications-section {
-  margin-top: 2rem;
-}
-
-.certifications-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.certification-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f9f9f9;
-  padding: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-.certification-item .text-content {
-  flex: 1;
-  text-align: left;
-}
-
-.certification-item .text-content p {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.certification-item .text-content ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-.certification-item .image-content {
-  flex: 0 0 300px;
-  margin-left: 2rem;
-  max-width: 300px;
-}
-
-.certification-item .image-content img.certification-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
+/* ==============================
+   Responsive Design
+   ============================== */
+@media (max-width: 1024px) {
+  .skills-research-container,
+  .section-item,
+  .research-container,
   .certification-item {
     flex-direction: column;
     text-align: center;
   }
-  .certification-item .image-content {
-    margin-left: 0;
+
+  .image-content {
     margin-top: 1rem;
-    max-width: 100%;
+    flex: 1 1 100%;
   }
 }
-/* About Container Layout */
-.about-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.about-container .left-column {
-  /* Reserve enough space for your image at its original size */
-  flex: 0 0 auto;
-  text-align: center;
-}
-
-.about-container .right-column {
-  flex: 1;
-}
-
-/* Preserve previous profile image size */
-.about-container .left-column .profile-img {
-  width: 250px; /* This is your previous size; adjust if needed */
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-container .left-column,
-  .about-container .right-column {
-    width: 100%;
-  }
-  .about-container .left-column {
-    margin-bottom: 1.5rem;
-  }
-}
-
-/* Interests & Education Section */
-.skills-research-section {
-  margin-top: 2rem;
-}
-
-.skills-research-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-  text-align: center;
-}
-
-.skills-research-container {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
-  flex-wrap: wrap; /* Ensures responsiveness */
-}
-
-.skills-research-container .left-column-skills,
-.skills-research-container .right-column-skills {
-  flex: 1 1 45%; /* Ensures equal width */
-  background: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
-
-.skills-research-container h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: #333;
-  border-bottom: 2px solid #007bff; /* Adds a subtle underline */
-  padding-bottom: 5px;
-}
-
-.skills-research-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skills-research-container ul li {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .skills-research-container {
-    flex-direction: column;
-  }
-  
-  .skills-research-container .left-column-skills,
-  .skills-research-container .right-column-skills {
-    flex: 1;
-    width: 100%;
-  }
-}
-
-
-.download-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background-color: #007bff; /* Primary blue background */
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.download-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.05);
-}
-
-.highlight {
-  font-weight: bold; /* Makes the text bold */
-  color: #2a7f62; /* A professional green color */
-  text-decoration: underline; /* Underlines the text */
-}
-/* Style for Education List */
-.right-column-skills ul li {
-  font-size: 1rem; /* Default font size */
-  color: #555;
-  margin-bottom: 0.75rem;
-  display: flex;
-  flex-direction: column; /* Stack text properly */
-  align-items: flex-start;
-  gap: 5px;
-}
-
-.right-column-skills ul li i {
-  color: #007bff; /* Icon color */
-  font-size: 1.2rem; /* Icon size */
-  margin-right: 8px;
-}
-
-/* Style for university name */
-.university-name {
-  font-size: 0.85rem; /* Make it smaller */
-  color: #777; /* Slightly lighter color */
-  font-style: italic; /* Optional: Italicize for a refined look */
-}
-
-.highlight-green {
-  color: #2a7f62;
-  font-weight: bold;
-}
-.highlight-blue {
-  color: #0056b3;
-  font-weight: bold;
-}
-.highlight-red {
-  color: #cc0000;
-  font-weight: bold;
-}
-
