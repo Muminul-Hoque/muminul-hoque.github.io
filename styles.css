@@ -1,5 +1,5 @@
 /* ==============================
-   Root Variables for Light/Dark Mode
+   Root Variables (Light Mode Only)
    ============================== */
 :root {
   --bg-color: #ffffff;
@@ -12,10 +12,8 @@
   --card-bg: #f9f9f9;
   --border-color: #ccc;
   --shadow-color: rgba(0,0,0,0.1);
+  --accent-color-hover: #0062cc; /* darker shade for hover */
 }
-
-
-
 
 /* ==============================
    Shared Styles
@@ -32,13 +30,11 @@ body {
   text-align: justify;
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
   color: var(--accent-color);
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -132,7 +128,7 @@ main {
 }
 
 .download-btn:hover {
-  background-color: darken(var(--accent-color), 10%);
+  background-color: var(--accent-color-hover);
   transform: scale(1.05);
 }
 
