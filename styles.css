@@ -322,6 +322,26 @@ ul {
 .highlight-green { color: var(--highlight-green); font-weight: bold; }
 .highlight-blue { color: var(--highlight-blue); font-weight: bold; }
 
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+}
+
+.contact-section li i {
+  color: var(--accent-color);
+  margin-right: 8px;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+
 /* ==============================
    Footer
    ============================== */
