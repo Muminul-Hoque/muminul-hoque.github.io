@@ -344,6 +344,10 @@ ul {
   flex-shrink: 0;             /* prevent icon from shrinking */
 }
 
+.section-item.full-width {
+  flex-direction: column;   /* stack text and image vertically */
+  align-items: flex-start;  /* align text to the left */
+}
 
 
 /* ==============================
