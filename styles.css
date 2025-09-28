@@ -326,9 +326,12 @@ ul {
 .contact-section ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .contact-section li {
+  display: flex;              /* make icon + text align horizontally */
+  align-items: center;        /* vertically center them */
   margin-bottom: 0.75rem;
   font-size: 1rem;
   color: var(--secondary-text-color);
@@ -336,10 +339,11 @@ ul {
 
 .contact-section li i {
   color: var(--accent-color);
-  margin-right: 8px;
-  font-size: 1.1rem;
-  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  flex-shrink: 0;             /* prevent icon from shrinking */
 }
+
 
 
 /* ==============================
