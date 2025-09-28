@@ -182,6 +182,42 @@ main {
   color: var(--secondary-text-color);
   font-style: italic;
 }
+/* ==============================
+   Education & Research Interests
+   ============================== */
+.edu-research-container {
+  display: flex;
+  flex-wrap: wrap;       /* stack on smaller screens */
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.edu-column,
+.research-column {
+  flex: 1;
+  min-width: 250px;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.edu-column h3,
+.research-column h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 5px;
+  color: var(--text-color);
+}
+
+.edu-column ul li,
+.research-column ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+}
 
 /* ==============================
    Project / Research Section
