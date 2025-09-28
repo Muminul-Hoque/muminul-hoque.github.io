@@ -348,6 +348,31 @@ ul {
   flex-direction: column;   /* stack text and image vertically */
   align-items: flex-start;  /* align text to the left */
 }
+.achievement-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.achievement-item.full-width {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.achievement-item .text-content {
+  flex: 1;
+}
+
+.achievement-item .image-content {
+  flex: 0 0 auto;
+}
+
+.achievement-item h3 i {
+  color: var(--accent-color);
+  margin-right: 8px;
+}
 
 
 /* ==============================
