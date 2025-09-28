@@ -98,16 +98,4 @@ const certificateImgs = document.querySelectorAll('.certificate-img');
       trackVisitorLocation();
   }
 
-  // --- NEW DARK/LIGHT MODE FUNCTIONALITY ---
-  const themeToggleBtn = document.getElementById("theme-toggle");
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-  // Set default theme based on device
-  document.body.classList.toggle("dark-mode", prefersDark);
-
-  // Toggle theme on button click
-  themeToggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    document.body.classList.toggle("light-mode");
-  });
-});
+ 
