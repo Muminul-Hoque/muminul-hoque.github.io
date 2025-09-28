@@ -15,18 +15,7 @@
 }
 
 
-/* ==============================
-   Dark/Light Mode Toggle Class
-   ============================== */
-body.dark-mode {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
 
-body.light-mode {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
 
 /* ==============================
    Shared Styles
