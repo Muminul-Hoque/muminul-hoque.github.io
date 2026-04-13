@@ -13,8 +13,8 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Muhammed Muminul Hoque | Graph Learning, AI Security, and ML Researcher</title>
-  <meta name="description" content="Muhammed Muminul Hoque - About, Research, Academics, and Extra Curriculum Activity">
+  <title>Muhammed Muminul Hoque | ML Researcher – LLMs, Graph Learning & Trustworthy AI</title>
+  <meta name="description" content="Muhammed Muminul Hoque — Research Intern at William & Mary working on long-context LLM performance, dynamic graph learning, and trustworthy AI systems including phishing detection and quantum-resistant security.">
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -86,9 +86,9 @@
       <div class="about-text">
         <h2>About Me</h2>
         <p>
-  I am Muhammed Muminul Hoque, I completed my B.Sc. in Computer Science & Engineering from the   <a href="https://du.ac.bd/" target="_blank">University of Dhaka</a>. I am currently a Research Intern at the Department of Computer Science, 
-  <a href="https://www.wm.edu/" target="_blank">William & Mary</a>, where I work under the supervision of <a href="https://yaz91.github.io/" target="_blank">Prof. Yanfu Zhang</a> on cooperative trajectory prediction for autonomous vehicles. 
-  My research interests include robust graph neural networks, trustworthy machine learning, Large Language Models and quantum-resistant systems.
+  I am Muhammed Muminul Hoque, I completed my B.Sc. in Computer Science & Engineering from the <a href="https://du.ac.bd/" target="_blank">University of Dhaka</a>. I am currently a Research Intern at the Department of Computer Science,
+  <a href="https://www.wm.edu/" target="_blank">William & Mary</a>, where I work under the supervision of <a href="https://yaz91.github.io/" target="_blank">Prof. Yanfu Zhang</a> on long-context Large Language Model performance degradation and cooperative trajectory prediction for autonomous vehicles.
+  My research interests include in-context learning scaling laws, dynamic graph neural networks, and trustworthy machine learning.
 </p>
       
 
@@ -123,10 +123,9 @@
           <div class="research-column">
             <h3>Research Interests</h3>
             <ul>
-
-    <li><strong>Trustworthy & Explainable AI</strong> — AI security, fairness, transparency, human-centered XAI</li>
-    <li><strong>Human-Centered Security</strong> — Secured authentication, online trust, content moderation</li>
-    <li><strong>Deep Learning & Graph Neural Networks</strong> — GNNs, Graph-based learning, Scalable architectures</li>
+    <li><strong>Long-Context LLMs</strong> — ICL degradation, "Context Rot", RoPE extrapolation, vLLM inference</li>
+    <li><strong>Graph Neural Networks</strong> — Dynamic graphs, GNNs, cooperative trajectory prediction, V2X</li>
+    <li><strong>Trustworthy & Explainable AI</strong> — AI security, fairness, transparency, XAI</li>
     <li><strong>Data Mining & AI Applications</strong> — NLP, LLMs, adaptive detection, interdisciplinary ML</li>
     <li><strong>Human–Computer Interaction</strong> — User-centered design, natural interfaces</li>
     <li><strong>Extended Reality & Accessibility</strong> — Adaptive XR, Inclusive interfaces, Accessible design</li>
@@ -142,19 +141,21 @@
 <section id="updates" class="wrapper">
   <h2>📝 Updates</h2>
   <p class="lead">
+    <span class="highlight-blue"><strong>[Apr 2026]</strong></span>
+    Running baseline ICL scaling experiments on NVIDIA RTX A6000 hardware using vLLM, investigating "Context Rot" threshold degradation in Qwen-2.5-7B and Llama-3.2-3B beyond 50 few-shot demonstrations.
+    <br><br>
+
     <span class="highlight-blue"><strong>[Mar 2026]</strong></span> 
     Paper submitted to <em>IROS 2026</em> — 
     <em>"DyV2X: Dynamic Interaction Graphs for V2X Cooperative Trajectory Prediction."</em> 
     Co-authored with Yiran Ding, Maiqi Jiang, Yongming Qin, Sidi Lu, and Yanfu Zhang.
     <br><br>
 
-    <p class="lead">
     <span class="highlight-blue"><strong>[Mar 2026]</strong></span> 
     Paper submitted to <em>ECCT 2026</em> — 
     <em>"A Comparative Analysis of Traditional and Ensemble Machine Learning Models for Phishing Email Detection with Explainable AI."</em> 
     Co-authored with Md. Masudur Rahman, Jonayed Al-Faruk, AKM Bahalul Haque, Mir Tasrif Ahmed, and MD. Nayeem Pervez.
     <br><br>
-    
 
     <span class="highlight-blue"><strong>[Nov 2025]</strong></span> 
     Joined as Research Intern under <strong>Prof. Yanfu Zhang</strong>, 
@@ -200,6 +201,9 @@
     &nbsp;|&nbsp; Nov 2025 – Present</span>
   </p>
   <ul>
+    <li>Running ICL scaling experiments on NVIDIA RTX A6000 (48GB VRAM) using vLLM; benchmarking performance degradation in Qwen-2.5-7B (128k context) and Llama-3.2-3B across 0-shot to 200-shot prompts to identify the "Context Rot" threshold beyond ~15k tokens.</li>
+    <li>Investigating the "Lost in the Middle" phenomenon and positional embedding (RoPE) extrapolation failures in long-context foundation models.</li>
+    <li>Co-authored <em>DyV2X</em>, a dynamic graph learning framework for V2X cooperative trajectory prediction, submitted to IROS 2026 (2nd author).</li>
     <li>Designed and implemented GRUHistoryEncoder in PyTorch; integrated 
     across 6 CTDG architectures (TGN, TGAT, GraphMixer, DyGFormer, 
     DyRep, JODIE).</li>
@@ -266,7 +270,7 @@
   Explainable AI</strong><br>
   <u><strong>Muhammed Muminul Hoque</strong></u>, 
   Md. Masudur Rahman, Jonayed Al-Faruk, AKM Bahalul Haque, Mir Tasrif Ahmed, MD. Nayeem Pervez<br>
-  <em> International Conference on Electrical, Computer and Communication Technologies (ECCT 2026)</em>
+  <em>International Conference on Electrical, Computer and Communication Technologies (ECCT 2026)</em>
 </p>
 
 
@@ -276,26 +280,18 @@
   <h3>Ongoing Research</h3>
 
   <p>
-    <span style="color:#e6820a;"><strong>[In Progress]</strong></span>
-    &nbsp;<strong>Adaptive Phishing Email Detection via Multiple LLMs: 
-    A Dynamic Keyword Based Approach</strong>
+    <span style="color:#e6820a;"><strong>[In Preparation]</strong></span>
+    &nbsp;<strong>ZEAL: A Zero-Shot Ensemble Framework for Adaptive Phishing Detection with LLMs and Structured Debate</strong>
     &nbsp;<span style="color:#555;">(2025 – Present)</span><br>
-    <u><strong>Muhammed Muminul Hoque</strong></u> et al.
+    <u><strong>Muhammed Muminul Hoque</strong></u>
   </p>
   <ul>
-    <li>Developing a multi-LLM pipeline (ChatGPT, Gemini, DeepSeek, 
-    LLaMA, Grok) for extracting phishing indicators from emails.</li>
-    <li>Designing a continuous learning system where new phishing terms 
-    are promoted dynamically into the keyword snapshot.</li>
-    <li>Integrating Safe Browsing API checks and adaptive keyword stores 
-    for real-time detection across Gmail, .eml, and CSV sources.</li>
+    <li>Multi-tier detection pipeline combining adaptive keyword scoring, a 4-model LLM ensemble (GPT-4o-mini, Gemini, DeepSeek, LLaMA), and structured debate escalation — zero training data required.</li>
+    <li>Achieves 98.44% accuracy and 97.46% F1-score on 4,812 emails across two benchmarks, competitive with fine-tuned RoBERTa baselines without any task-specific training.</li>
+    <li>Dynamic keyword store learns emerging phishing vocabulary continuously via exponential time-decay weighting and accuracy-gated promotion.</li>
   </ul>
 
 </section>
-
-
-
-
 
 
       
@@ -309,7 +305,7 @@
     <p><em><span class="highlight-blue"><strong>4chan Toxicity Analysis: Comparative Study Using OpenAI & Perspective APIs</strong></span></em> (2025)</p>
     <p><a href="https://github.com/Muminul-Hoque/4chan-toxicity-analysis" target="_blank">[View on GitHub]</a></p>
     <ul>
-      <li>Analyzed toxic content on 4chan’s /pol/ board using OpenAI Moderation API and Google Perspective API.</li>
+      <li>Analyzed toxic content on 4chan's /pol/ board using OpenAI Moderation API and Google Perspective API.</li>
       <li>Preprocessed posts, applied rate limiting, and stored structured JSON datasets.</li>
       <li>Computed toxicity metrics (hate, harassment, sexual, threats, profanity) and compared model agreement.</li>
       <li>Generated visualizations to highlight moderation differences between the two APIs.</li>
@@ -565,7 +561,7 @@
 <!-- Contact Section -->
 <section id="contact" class="wrapper contact-section">
   <h2>📬 Contact Me</h2>
-  <p>If you’d like to collaborate, discuss research, or just say hello, feel free to reach out:</p>
+  <p>If you'd like to collaborate, discuss research, or just say hello, feel free to reach out:</p>
 
   <ul>
     <li>
