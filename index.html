@@ -86,10 +86,11 @@
       <div class="about-text">
         <h2>About Me</h2>
         <p>
-  I am Muhammed Muminul Hoque, I completed my B.Sc. in Computer Science & Engineering from the <a href="https://du.ac.bd/" target="_blank">University of Dhaka</a>. I am currently a Research Intern at the Department of Computer Science,
-  <a href="https://www.wm.edu/" target="_blank">William & Mary</a>, where I work under the supervision of <a href="https://yaz91.github.io/" target="_blank">Prof. Yanfu Zhang</a> on long-context Large Language Model performance degradation and cooperative trajectory prediction for autonomous vehicles.
-  My research interests include in-context learning scaling laws, dynamic graph neural networks, and trustworthy machine learning.
+  I am Muhammed Muminul Hoque. I recently completed my B.Sc. in Computer Science & Engineering from the <a href="https://du.ac.bd/" target="_blank">University of Dhaka</a>. Currently, I am a Research Intern at the Department of Computer Science,
+  <a href="https://www.wm.edu/" target="_blank">William & Mary</a>, working under the supervision of <a href="https://yaz91.github.io/" target="_blank">Prof. Yanfu Zhang</a>. My work focuses on mitigating long-context Large Language Model performance degradation and developing cooperative trajectory prediction for autonomous vehicles.
+  My core research interests include in-context learning scaling laws, dynamic graph neural networks, trustworthy machine learning, and AI for automated evidence synthesis.
 </p>
+
       
 
         <!-- Side-by-Side Education & Research Interests -->
@@ -123,13 +124,14 @@
           <div class="research-column">
             <h3>Research Interests</h3>
             <ul>
-    <li><strong>Long-Context LLMs</strong> — ICL degradation, "Context Rot", RoPE extrapolation, vLLM inference</li>
+    <li><strong>Long-Context LLMs</strong> — ICL degradation, Position-Aware RAG, RoPE extrapolation, vLLM</li>
+    <li><strong>AI for Science & Policy</strong> — Evidence synthesis, climate technical reports, automated extraction</li>
     <li><strong>Graph Neural Networks</strong> — Dynamic graphs, GNNs, cooperative trajectory prediction, V2X</li>
     <li><strong>Trustworthy & Explainable AI</strong> — AI security, fairness, transparency, XAI</li>
-    <li><strong>Data Mining & AI Applications</strong> — NLP, LLMs, adaptive detection, interdisciplinary ML</li>
-    <li><strong>Human–Computer Interaction</strong> — User-centered design, natural interfaces</li>
-    <li><strong>Extended Reality & Accessibility</strong> — Adaptive XR, Inclusive interfaces, Accessible design</li>
+    <li><strong>Data Mining & HCI</strong> — Adaptive detection, interdisciplinary ML, user-centered design</li>
 </ul>
+          </div>
+
           </div>
         </div>
       </div>
@@ -200,18 +202,13 @@
     <a href="https://yaz91.github.io/" target="_blank">Prof. Yanfu Zhang</a>
     &nbsp;|&nbsp; Nov 2025 – Present</span>
   </p>
-  <ul>
-    <li>Running ICL scaling experiments on NVIDIA RTX A6000 (48GB VRAM) using vLLM; benchmarking performance degradation in Qwen-2.5-7B (128k context) and Llama-3.2-3B across 0-shot to 200-shot prompts to identify the "Context Rot" threshold beyond ~15k tokens.</li>
-    <li>Investigating the "Lost in the Middle" phenomenon and positional embedding (RoPE) extrapolation failures in long-context foundation models.</li>
+    <ul>
+    <li>Developing a <strong>"Position-Aware" In-Context Learning (ICL)</strong> evaluation pipeline for long-context LLMs (Qwen2.5 7B) to mitigate performance degradation ("Context Rot") in multi-shot prompting.</li>
+    <li>Engineering automated, large-scale inference pipelines via vLLM on NVIDIA RTX A6000 (48GB VRAM) to test whether ordering candidate examples using the "Lost in the Middle" attention bias yields zero-cost accuracy gains.</li>
     <li>Co-authored <em>DyV2X</em>, a dynamic graph learning framework for V2X cooperative trajectory prediction, submitted to IROS 2026 (2nd author).</li>
-    <li>Designed and implemented GRUHistoryEncoder in PyTorch; integrated 
-    across 6 CTDG architectures (TGN, TGAT, GraphMixer, DyGFormer, 
-    DyRep, JODIE).</li>
-    <li>Best result: TGAT+GRU — ADE 0.952m, FDE 1.664m, MR 24.7%, 
-    outperforming V2X-Graph baseline on all metrics.</li>
-    <li>Reproduced HiVT, TNT, DenseTNT baselines on cooperative trajectory 
-    data; conducted WOMD shape analysis and latency benchmarks.</li>
+    <li>Designed a GRU history encoder across 6 CTDG architectures (TGN, TGAT, GraphMixer, DyGFormer, DyRep, JODIE) on the V2X-Seq-TFD dataset; achieved minADE=0.952m, minFDE=1.664m, MR=24.7%.</li>
   </ul>
+
 
   <hr style="margin: 2rem 0;">
 
