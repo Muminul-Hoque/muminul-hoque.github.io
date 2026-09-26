@@ -289,6 +289,7 @@
 
       
      <!-- Project Work -->
+
 <section id="projects" class="wrapper">
   <h2>Project Work</h2>
   <div class="project">
@@ -320,6 +321,41 @@
     </ul>
   </div>
 </div>
+
+    <!-- Building Footprint Segmentation Project -->
+  <div class="project-item section-item">
+    <div class="text-content">
+      <p><em><span class="highlight-blue"><strong>Building Footprint Segmentation on Aerial Imagery (U-Net + ResNet34)</strong></span></em> (2026)</p>
+      <p>
+        <a href="https://github.com/Muminul-Hoque/inria-building-segmentation" target="_blank">[View on GitHub]</a>
+      </p>
+      <ul>
+        <li>Trained a U-Net with a ResNet34 encoder for binary building segmentation on the Inria Aerial Image Labeling contest — 180 labeled 5000×5000 tiles across 5 regions on two continents.</li>
+        <li>Used windowed <code>rasterio</code> reads so the ~20GB dataset is never loaded into memory as full tiles, plus sliding-window inference with overlap averaging to avoid seam artifacts.</li>
+        <li>Addressed severe class imbalance (buildings ~14.5% of pixels) with a hybrid BCE + Dice + morphological edge-weighting loss.</li>
+        <li>Achieved IoU = 0.677, Dice/F1 = 0.808 on held-out validation tiles — deliberately not optimizing for pixel accuracy, since an all-background predictor scores ~85.5% while detecting zero buildings.</li>
+        <li><strong>Tools:</strong> Python, PyTorch, rasterio</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bikeshare Demand Forecasting Project -->
+  <div class="project-item section-item">
+    <div class="text-content">
+      <p><em><span class="highlight-blue"><strong>Capital Bikeshare Demand: Analysis & Forecasting</strong></span></em> (2026)</p>
+      <p>
+        <a href="https://github.com/Muminul-Hoque/bikeshare-demand-forecasting" target="_blank">[View on GitHub]</a>
+      </p>
+      <ul>
+        <li>Analyzed two years of hourly Capital Bikeshare (D.C.) rental data end to end — what drives demand, how weather and rider type interact, and how well demand forecasts a few weeks out.</li>
+        <li>Diagnosed severe overdispersion in the target (variance ≈174× the mean) and used Negative Binomial regression instead of Poisson, with VIF-based multicollinearity checks.</li>
+        <li>Built a leakage-safe forecasting pipeline (<code>historical_demand_profile</code> only ever looks at <em>past</em> calendar-aligned demand) and compared 4 models across all 24 monthly test windows.</li>
+        <li>MLP achieved the best MAE/RMSE (34.48 / 56.78) across the test windows; Random Forest was more reliable on relative error at low-volume hours.</li>
+        <li><strong>Tools:</strong> Python, XGBoost, scikit-learn, statsmodels</li>
+      </ul>
+    </div>
+  </div>
+  
   <!-- 4Chan Toxicity Analysis Project -->
 <div class="project-item section-item">
   <div class="text-content">
